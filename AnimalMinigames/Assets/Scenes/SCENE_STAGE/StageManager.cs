@@ -9,6 +9,7 @@ public class StageManager : MonoBehaviour
     // stageIndex 값을 변경하면 보고있는 스테이지가 바뀝니다!
     public int stageIndex = 0;
     public Text txtMapName;
+    private AudioSource bgmAudioSource;
 
     // 스테이지 구조체
     [Serializable]
@@ -26,7 +27,7 @@ public class StageManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        bgmAudioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -50,6 +51,9 @@ public class StageManager : MonoBehaviour
                     Stages[i].stageObject.SetActive(true);
                 }
             }
+
+            bgmAudioSource.clip = Stages[stageIndex].stageBgm;
+            bgmAudioSource.Play();
         }
     }
 }
