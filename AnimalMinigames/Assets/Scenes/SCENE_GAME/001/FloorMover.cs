@@ -6,20 +6,25 @@ public class FloorMover : MonoBehaviour
 {
     public float floorSpeed = 0;
     public float floorWidth = 0;
+
+    bool doScale = true;
     // Start is called before the first frame update
     void Start()
     {
-        Transform[] objects = GetComponentsInChildren<Transform>();
-        foreach (Transform obj in objects)
-        {
-            //obj.transform.localScale = new Vector2(1.001f, 1);
-        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (doScale)
+        {
+            Transform[] _o = GetComponentsInChildren<Transform>();
+            foreach (Transform obj in _o)
+                obj.transform.localScale = new Vector2(
+                    obj.transform.localScale.x+0.001f, obj.transform.localScale.y);
+            doScale = false;
+        }
+
         float delta = Mathf.Min((float)System.Math.Round(Time.deltaTime, 7), 0.02f);
         float move = (float)System.Math.Round(floorSpeed * delta, 7);
         //Debug.Log(delta);
