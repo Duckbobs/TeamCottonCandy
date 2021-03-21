@@ -4,18 +4,29 @@ using UnityEngine;
 
 public class StageSelectorScroll : MonoBehaviour
 {
-    public Transform CameraTransform;
-    private Vector3 MousePosition;
+    public Cinemachine.CinemachineVirtualCamera VirtualCamera;
+    private Vector3 PrevMousePosition;
+    private Collider2D Collider2D;
+
+    private void Awake()
+    {
+        Collider2D = GetComponent<CompositeCollider2D>();
+    }
 
     private void OnMouseDown()
     {
-        MousePosition = Input.mousePosition;
+        PrevMousePosition = Input.mousePosition;
     }
 
     private void OnMouseDrag()
     {
-        Vector3 distance = Input.mousePosition - MousePosition;
-        MousePosition = Input.mousePosition;
-        CameraTransform.Translate(new Vector3(0.0f, -distance.y, 0.0f) * Time.deltaTime);
+        Vector3 distance = PrevMousePosition - Input.mousePosition;
+        PrevMousePosition = Input.mousePosition;
+        Vector3 movePosition = VirtualCamera.transform.position + new Vector3(0.0f, distance.y * Time.deltaTime, 0.0f);
+        if (!Collider2D.OverlapPoint(movePosition))
+        {
+            movePosition.y = Collider2D.bounds.ClosestPoint(movePosition).y;
+        }
+        VirtualCamera.transform.position = movePosition;
     }
 }
