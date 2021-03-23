@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class StageSelectorScroll : MonoBehaviour
 {
@@ -20,6 +21,9 @@ public class StageSelectorScroll : MonoBehaviour
 
     private void OnMouseDrag()
     {
+        if (EventSystem.current.IsPointerOverGameObject())
+            return;
+
         Vector3 distance = PrevMousePosition - Input.mousePosition;
         PrevMousePosition = Input.mousePosition;
         Vector3 movePosition = VirtualCamera.transform.position + new Vector3(0.0f, distance.y * Time.deltaTime, 0.0f);
