@@ -3,21 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneChanger : MonoBehaviour
+public static class SceneChanger
 {
-    // Start is called before the first frame update
-    void Start()
+    public static void Load(string scene_name)
     {
-        
+        SceneManager.LoadScene(scene_name);
     }
-
-    // Update is called once per frame
-    void Update()
+    public static void Load_Async(string scene_name)
     {
-
-    }
-    public void ChangeScene(string scene_name)
-    {
+        // TODO 비동기로 씬 로드 (+로딩 씬 표시)
         SceneManager.LoadScene(scene_name);
     }
 }

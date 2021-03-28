@@ -8,7 +8,8 @@ public class Vspeed : MonoBehaviour
     public float gravity = 0.0003f;
     public float groundY;
     float vspeed = 0;
-    bool isJump = false;
+    public int maxJump = 1;
+    int isJump = 0;
 
     public AudioClip soundJump;
     public AudioSource bgmAudioSource;
@@ -24,7 +25,7 @@ public class Vspeed : MonoBehaviour
         {
             if (vspeed < 0)
             {
-                isJump = false;
+                isJump = 0;
                 vspeed = 0;
                 GetComponent<Transform>().transform.localPosition = new Vector3(
                     gameObject.transform.localPosition.x, groundY, gameObject.transform.localPosition.z);
@@ -40,10 +41,10 @@ public class Vspeed : MonoBehaviour
 
     public void doJump()
     {
-        if (isJump == false)
+        if (isJump < maxJump)
         {
             vspeed = jumpSpeed;
-            isJump = true;
+            isJump++;
             bgmAudioSource.PlayOneShot(soundJump);
         }
     }

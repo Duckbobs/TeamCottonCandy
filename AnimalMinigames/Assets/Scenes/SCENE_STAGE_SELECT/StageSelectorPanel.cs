@@ -7,7 +7,6 @@ public class StageSelectorPanel : MonoBehaviour
 {
     private StageSelectorEvent.Stage OpenStage;
     public Image MainImage;
-    public SceneChanger SceneChanger;
 
     public void Open(StageSelectorEvent.Stage stage)
     {
@@ -23,6 +22,6 @@ public class StageSelectorPanel : MonoBehaviour
 
     public void StartStage()
     {
-        SceneChanger.ChangeScene(OpenStage.stageName);
+        SceneChanger.Load(OpenStage.stageName);
     }
 }
