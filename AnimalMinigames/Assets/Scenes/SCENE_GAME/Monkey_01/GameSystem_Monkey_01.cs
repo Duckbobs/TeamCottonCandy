@@ -1,14 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class GameSystem_Monkey_01 : MonoBehaviour
+public static class GameSystem_Monkey_01
 {
-    public Text text;
-    // Update is called once per frame
-    void Update()
-    {
-        text.text = StringUtil.NumberFormat(100000);
-    }
+    public static int Score = 0;
 }

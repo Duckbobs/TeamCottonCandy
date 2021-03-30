@@ -15,5 +15,9 @@ public class Hspeed : MonoBehaviour
     {
         GetComponent<Transform>().transform.position = new Vector3(
             gameObject.transform.position.x + hspeed * Time.deltaTime, gameObject.transform.position.y, gameObject.transform.position.z);
+        if (gameObject.transform.position.x < -5)
+        {
+            Destroy(gameObject);
+        }
     }
 }
