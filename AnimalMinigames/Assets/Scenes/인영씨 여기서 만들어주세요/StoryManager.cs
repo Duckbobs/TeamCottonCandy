@@ -35,6 +35,7 @@ public class StoryManager : MonoBehaviour
 
     public void DoEnd()
     {
+        SceneChanger.Load_Async("Monkey_01");
         // 종료 (창을 닫는다)
         Destroy(gameObject);
     }
