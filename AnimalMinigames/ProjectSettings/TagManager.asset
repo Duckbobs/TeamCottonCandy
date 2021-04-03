@@ -7,6 +7,7 @@ TagManager:
   - FloorManager
   - Floor
   - Object
+  - HouseObject
   layers:
   - Default
   - TransparentFX
