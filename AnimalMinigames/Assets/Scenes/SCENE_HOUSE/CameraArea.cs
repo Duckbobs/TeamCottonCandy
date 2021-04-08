@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CameraArea : MonoBehaviour
 {
@@ -13,10 +14,13 @@ public class CameraArea : MonoBehaviour
     public float ExtendHeight = -5.0f;
 
     private BoxCollider2D CameraArea2D;
+    private Vector3 PrevMousePosition;
+    GameObject[] floorObjects;
 
     private void Start()
     {
         CameraArea2D = GetComponent<BoxCollider2D>();
+        floorObjects = GameObject.FindGameObjectsWithTag(ExtendTag);
     }
 
     private void Update()
@@ -31,7 +35,6 @@ public class CameraArea : MonoBehaviour
         if (VirtualCamera.m_Lens.OrthographicSize < MinCameraScale) VirtualCamera.m_Lens.OrthographicSize = MinCameraScale;
 
         // 카메라의 영역을 땅에 맞게 설정합니다.
-        GameObject[] floorObjects = GameObject.FindGameObjectsWithTag(ExtendTag);
         foreach (GameObject floorObject in floorObjects)
         {
             float camDownArea = transform.position.y - CameraArea2D.size.y * 0.5f;
@@ -40,5 +43,24 @@ public class CameraArea : MonoBehaviour
             if (camDownArea > objDownArea)
                 CameraArea2D.size = new Vector2(CameraArea2D.size.x, -objDownArea * 2.0f);
         }
+    }
+    private void OnMouseDown()
+    {
+        PrevMousePosition = Input.mousePosition;
+    }
+    private void OnMouseDrag()
+    {
+        if (EventSystem.current.IsPointerOverGameObject())
+            return;
+
+
+
+        VirtualCamera.transform.position = Camera.main.transform.position;
+
+        Vector3 distance = PrevMousePosition - Input.mousePosition;
+        PrevMousePosition = Input.mousePosition;
+        Vector3 movePosition = VirtualCamera.transform.position + new Vector3(distance.x * Time.deltaTime, distance.y * Time.deltaTime, 0.0f);
+
+        VirtualCamera.transform.position = movePosition;
     }
 }
