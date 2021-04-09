@@ -27,11 +27,10 @@ public class GridMovement : MonoBehaviour
         Vector2 newVector = pos;
         /**************************************/
         // TODO // newVector의 X, Y 를 0.5 단위로 양자화 ( 더 가까운 지점으로 양자화 )
-       
-        if (newVector.x - (int)newVector.x >= 0.25 && newVector.x - (int)newVector.x < 0.75)
-            newVector.x = (int)newVector.x + 0.5f;
-        else if (newVector.x - (int)newVector.x >= 0.75 && newVector.x - (int)newVector.x < 1.25)
-            newVector.x = (int)newVector.x;
+
+        float x_int = Mathf.Floor(newVector.x);
+        float x = Mathf.Abs(newVector.x - x_int);
+        newVector.x = (x >= 0 && x < 0.25) ? x_int : x_int + 0.5f;
 
         if (newVector.y > -0.25)
             newVector.y = 0;
