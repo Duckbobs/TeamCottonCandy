@@ -5,7 +5,7 @@ using UnityEngine;
 public class FloorMover : MonoBehaviour
 {
     public float floorSpeed = 0;
-    public float floorWidth = 0;
+    private float floorWidth = 0;
     List<Transform> objects;
     Transform rightObject = null;
     Transform destroyObject = null;
@@ -15,6 +15,7 @@ public class FloorMover : MonoBehaviour
     {
         objects = new List<Transform>();
         Transform[] comps = GetComponentsInChildren<Transform>();
+
         foreach (Transform obj in comps)
         {
             if (obj.tag == "Floor")
@@ -23,6 +24,7 @@ public class FloorMover : MonoBehaviour
                 objects.Add(obj);
             }
         }
+        floorWidth = objects[0].gameObject.GetComponent<SpriteRenderer>().size.x;
     }
 
     // Update is called once per frame
