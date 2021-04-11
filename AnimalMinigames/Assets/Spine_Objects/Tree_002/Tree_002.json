@@ -1,0 +1,196 @@
+{
+"skeleton": {
+	"hash": "GVrMu0SjmUeqEY7tNMcJ2ax80D8",
+	"spine": "3.8.99",
+	"x": -214.58,
+	"y": -17.93,
+	"width": 720.27,
+	"height": 840.42,
+	"images": "../images/TREE1/",
+	"audio": "C:/Users/하쿠/Documents/카카오톡 받은 파일/tree1"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "tree left", "parent": "root", "length": 481.25, "rotation": 75.21 },
+	{ "name": "tree left2", "parent": "tree left", "length": 286.26, "rotation": -136.57, "x": 528.75, "y": -19.38 },
+	{ "name": "tree left3", "parent": "tree left", "length": 232.31, "rotation": 137.09, "x": 525.35, "y": -2.72 },
+	{ "name": "tree left4", "parent": "tree left", "length": 224.16, "rotation": -95.15, "x": 531, "y": -23.94 },
+	{ "name": "tree left5", "parent": "tree left", "length": 249.56, "rotation": -69.82, "x": 539.68, "y": -6.14 },
+	{ "name": "tree left6", "parent": "tree left", "length": 312.3, "rotation": 117.83, "x": 540.14, "y": -3.95 },
+	{ "name": "tree left7", "parent": "tree left", "length": 292.8, "rotation": -33.91, "x": 550.62, "y": -4.81 },
+	{ "name": "tree left8", "parent": "tree left", "length": 250.84, "rotation": 28.17, "x": 546.43, "y": -8.52 },
+	{ "name": "tree left9", "parent": "tree left", "length": 272.15, "rotation": 79.28, "x": 535.45, "y": -25.69 },
+	{ "name": "tree left10", "parent": "tree left", "length": 233.84, "rotation": -16.75, "x": 589.1, "y": 1.54 },
+	{ "name": "coconut3", "parent": "tree left", "length": 118.19, "rotation": -38.71, "x": 449.02, "y": 26.45 }
+],
+"slots": [
+	{ "name": "yaja2", "bone": "tree left", "attachment": "yaja2" },
+	{ "name": "yaja2line", "bone": "tree left", "attachment": "yaja2line" },
+	{ "name": "yaja3-3", "bone": "tree left6", "attachment": "yaja3-3" },
+	{ "name": "yaja3-3line", "bone": "tree left6", "attachment": "yaja3-3line" },
+	{ "name": "yaja3-2", "bone": "tree left10", "attachment": "yaja3-2" },
+	{ "name": "yaja3-2line", "bone": "tree left10", "attachment": "yaja3-2line" },
+	{ "name": "yaja3-1", "bone": "tree left5", "attachment": "yaja3-1" },
+	{ "name": "yaja3-1line", "bone": "tree left5", "attachment": "yaja3-1line" },
+	{ "name": "yaja2-3", "bone": "tree left8", "attachment": "yaja2-3" },
+	{ "name": "yaja2-3linea", "bone": "tree left8", "attachment": "yaja2-3linea" },
+	{ "name": "yaja202", "bone": "tree left7", "attachment": "yaja202" },
+	{ "name": "yaja2-2lines", "bone": "tree left7", "attachment": "yaja2-2lines" },
+	{ "name": "yaja2-1", "bone": "tree left2", "attachment": "yaja2-1" },
+	{ "name": "yaja2-1line", "bone": "tree left2", "attachment": "yaja2-1line" },
+	{ "name": "coconut2", "bone": "coconut3", "attachment": "coconut2" },
+	{ "name": "yaja1-3dd", "bone": "tree left3", "attachment": "yaja1-3dd" },
+	{ "name": "yaja1-3linez", "bone": "tree left3", "attachment": "yaja1-3linez" },
+	{ "name": "yaja1-2dd", "bone": "tree left9", "attachment": "yaja1-2dd" },
+	{ "name": "yaja1-2linedd", "bone": "tree left9", "attachment": "yaja1-2linedd" },
+	{ "name": "yajaleaf1-1dd", "bone": "tree left4", "attachment": "yajaleaf1-1dd" },
+	{ "name": "yaja1-1 linedd", "bone": "tree left4", "attachment": "yaja1-1 linedd" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"coconut2": {
+				"coconut2": { "x": 65.87, "y": -2.67, "rotation": -36.38, "width": 180, "height": 137 }
+			},
+			"yaja1-1 linedd": {
+				"yaja1-1 linedd": { "x": 99.47, "y": 94.49, "rotation": 20.05, "width": 300, "height": 473 }
+			},
+			"yaja1-2dd": {
+				"yaja1-2dd": { "x": 179.08, "y": 15.12, "rotation": -154.38, "width": 336, "height": 147 }
+			},
+			"yaja1-2linedd": {
+				"yaja1-2linedd": { "x": 110.27, "y": -88.86, "rotation": -154.38, "width": 558, "height": 319 }
+			},
+			"yaja1-3dd": {
+				"yaja1-3dd": { "x": 134.61, "y": 17.29, "rotation": 147.81, "width": 257, "height": 215 }
+			},
+			"yaja1-3linez": {
+				"yaja1-3linez": { "x": -27.53, "y": -36.63, "rotation": 147.81, "width": 478, "height": 491 }
+			},
+			"yaja2": {
+				"yaja2": { "x": 249.08, "y": 3.66, "rotation": -75.1, "width": 198, "height": 509 }
+			},
+			"yaja2-1": {
+				"yaja2-1": { "x": 163.79, "y": -6.15, "rotation": 61.47, "width": 208, "height": 348 }
+			},
+			"yaja2-1line": {
+				"yaja2-1line": { "x": 122.31, "y": -80.35, "rotation": 61.47, "width": 586, "height": 352 }
+			},
+			"yaja2-2lines": {
+				"yaja2-2lines": { "x": 40.89, "y": 46.31, "rotation": -41.19, "width": 594, "height": 373 }
+			},
+			"yaja2-3": {
+				"yaja2-3": { "x": 148.8, "y": 43.74, "rotation": -103.27, "width": 201, "height": 323 }
+			},
+			"yaja2-3linea": {
+				"yaja2-3linea": { "x": 145.06, "y": 106.27, "rotation": -103.27, "width": 325, "height": 359 }
+			},
+			"yaja2line": {
+				"yaja2line": { "x": 249.24, "y": 1.11, "rotation": -75.1, "width": 205, "height": 518 }
+			},
+			"yaja3-1": {
+				"yaja3-1": { "x": 2.31, "y": -5.55, "rotation": -5.28, "width": 718, "height": 205 }
+			},
+			"yaja3-1line": {
+				"yaja3-1line": { "x": 146.72, "y": -2.31, "rotation": -5.28, "width": 429, "height": 178 }
+			},
+			"yaja3-2": {
+				"yaja3-2": { "x": 104.55, "y": 33.29, "rotation": -58.35, "width": 378, "height": 278 }
+			},
+			"yaja3-2line": {
+				"yaja3-2line": { "x": 146.55, "y": -30.1, "rotation": -58.35, "width": 238, "height": 281 }
+			},
+			"yaja3-3": {
+				"yaja3-3": { "x": 161.7, "y": 12.97, "rotation": 167.07, "width": 399, "height": 148 }
+			},
+			"yaja3-3line": {
+				"yaja3-3line": { "x": 116.9, "y": 21.19, "rotation": 167.07, "width": 494, "height": 152 }
+			},
+			"yaja202": {
+				"yaja202": { "x": 165.58, "y": -16.95, "rotation": -41.19, "width": 317, "height": 270 }
+			},
+			"yajaleaf1-1dd": {
+				"yajaleaf1-1dd": { "x": 140.08, "y": -5.12, "rotation": 20.05, "width": 290, "height": 150 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"bones": {
+			"tree left": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -2.71 },
+					{ "time": 0.8667, "angle": -2.32 },
+					{ "time": 1.3333 }
+				]
+			},
+			"tree left2": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -6.81 },
+					{ "time": 1.3333 }
+				]
+			},
+			"tree left4": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -2.55 },
+					{ "time": 1.3333 }
+				]
+			},
+			"tree left5": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -3.93 },
+					{ "time": 1.3333 }
+				]
+			},
+			"tree left7": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -7.94 },
+					{ "time": 1.3333 }
+				]
+			},
+			"tree left10": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -4.46 },
+					{ "time": 1.3333 }
+				]
+			},
+			"tree left8": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -7.05 },
+					{ "time": 1.3333 }
+				]
+			},
+			"tree left9": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -4.4 },
+					{ "time": 1.3333 }
+				]
+			},
+			"tree left6": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -9.81 },
+					{ "time": 1.3333 }
+				]
+			},
+			"tree left3": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -5.68 },
+					{ "time": 1.3333 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,195 @@
+{
+"skeleton": {
+	"hash": "mNUglpt5OeNWIXlH4YAT0iEtnWs",
+	"spine": "3.8.99",
+	"x": -214.58,
+	"y": -17.93,
+	"width": 720.27,
+	"height": 840.42,
+	"images": "../images/TREE1/",
+	"audio": "C:/Users/하쿠/Documents/카카오톡 받은 파일/tree1"
+},
+"bones": [
+	{ "name": "root", "x": 10.98, "y": -16.81 },
+	{ "name": "top tree", "parent": "root", "length": 142.47, "rotation": 109.37 },
+	{ "name": "top tree-root", "parent": "top tree", "length": 178.2, "rotation": -29.95, "x": 208.03, "y": 26.06 },
+	{ "name": "top tree2", "parent": "top tree", "length": 265.78, "rotation": -125.52, "x": 176.14, "y": 9.86 },
+	{ "name": "top tree3", "parent": "top tree", "length": 174.77, "rotation": 154.42, "x": 174.88, "y": 17.64 },
+	{ "name": "top tree4", "parent": "top tree", "length": 266.08, "rotation": -107.16, "x": 206.24, "y": 52.76 },
+	{ "name": "top tree5", "parent": "top tree", "length": 229.88, "rotation": -75.53, "x": 195.86, "y": 23.93 },
+	{ "name": "top tree6", "parent": "top tree", "length": 164.34, "rotation": 19.68, "x": 208.7, "y": 42.93 },
+	{ "name": "top tree7", "parent": "top tree", "length": 192.02, "rotation": 120.05, "x": 165.17, "y": 36.14 },
+	{ "name": "top tree8", "parent": "top tree", "length": 172.5, "rotation": 59.91, "x": 181.2, "y": 43.21 },
+	{ "name": "coconut2", "parent": "top tree", "length": 58.69, "rotation": -28.68, "x": 119.5, "y": 19.84 },
+	{ "name": "top tree9", "parent": "top tree", "length": 162.89, "rotation": 97.34, "x": 174.33, "y": 27.7 }
+],
+"slots": [
+	{ "name": "yajatree", "bone": "top tree", "attachment": "yajatree" },
+	{ "name": "yajatree3line", "bone": "top tree", "attachment": "yajatree3line" },
+	{ "name": "yaja3z", "bone": "top tree3", "attachment": "yaja3z" },
+	{ "name": "yaja3linesz", "bone": "top tree3", "attachment": "yaja3linesz" },
+	{ "name": "yaja3-2z", "bone": "top tree4", "attachment": "yaja3-2z" },
+	{ "name": "yaja3-2linesz", "bone": "top tree4", "attachment": "yaja3-2linesz" },
+	{ "name": "yajaleaf3-1z", "bone": "top tree-root", "attachment": "yajaleaf3-1z" },
+	{ "name": "yajaleaf3-1linez", "bone": "top tree-root", "attachment": "yajaleaf3-1linez" },
+	{ "name": "yajaleaf2-3", "bone": "top tree9", "attachment": "yajaleaf2-3" },
+	{ "name": "yaja2-3line", "bone": "top tree9", "attachment": "yaja2-3line" },
+	{ "name": "yajaleaf2-2", "bone": "top tree6", "attachment": "yajaleaf2-2" },
+	{ "name": "yaja2-2line", "bone": "top tree6", "attachment": "yaja2-2line" },
+	{ "name": "yajaleaf2-1", "bone": "top tree5", "attachment": "yajaleaf2-1" },
+	{ "name": "yaja2-1leaf", "bone": "top tree5", "attachment": "yaja2-1leaf" },
+	{ "name": "coconut3", "bone": "coconut2", "attachment": "coconut3" },
+	{ "name": "yaja1-3", "bone": "top tree7", "attachment": "yaja1-3" },
+	{ "name": "yaja1-3line", "bone": "top tree7", "attachment": "yaja1-3line" },
+	{ "name": "yaja1-2", "bone": "top tree8", "attachment": "yaja1-2" },
+	{ "name": "yaja1-2line", "bone": "top tree8", "attachment": "yaja1-2line" },
+	{ "name": "yajaleaf1-1", "bone": "top tree2", "attachment": "yajaleaf1-1" },
+	{ "name": "yajaleaf1-1line", "bone": "top tree2", "attachment": "yajaleaf1-1line" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"coconut3": {
+				"coconut3": { "x": 45.29, "y": -26.06, "rotation": -81.12, "width": 118, "height": 106 }
+			},
+			"yaja1-2": {
+				"yaja1-2": { "x": 136.35, "y": 6.87, "rotation": -169.71, "width": 334, "height": 122 }
+			},
+			"yaja1-2line": {
+				"yaja1-2line": { "x": 91.49, "y": -0.77, "rotation": -169.71, "width": 429, "height": 125 }
+			},
+			"yaja1-3": {
+				"yaja1-3": { "x": 126.35, "y": 7.21, "rotation": 130.15, "width": 195, "height": 235 }
+			},
+			"yaja1-3line": {
+				"yaja1-3line": { "x": 128.29, "y": 4.92, "rotation": 130.15, "width": 205, "height": 235 }
+			},
+			"yaja2-1leaf": {
+				"yaja2-1leaf": { "x": 51.12, "y": 80.44, "rotation": -34.27, "width": 503, "height": 266 }
+			},
+			"yaja2-2line": {
+				"yaja2-2line": { "x": 122.76, "y": -10.02, "rotation": -129.48, "width": 328, "height": 243 }
+			},
+			"yaja2-3line": {
+				"yaja2-3line": { "x": 70.73, "y": -73.11, "rotation": 152.86, "width": 328, "height": 434 }
+			},
+			"yaja3-2linesz": {
+				"yaja3-2linesz": { "x": 74.04, "y": 51.41, "rotation": -2.64, "width": 485, "height": 203 }
+			},
+			"yaja3-2z": {
+				"yaja3-2z": { "x": 145.77, "y": 0.55, "rotation": -2.64, "width": 337, "height": 102 }
+			},
+			"yaja3linesz": {
+				"yaja3linesz": { "x": 30.62, "y": -72.86, "rotation": 95.79, "width": 278, "height": 394 }
+			},
+			"yaja3z": {
+				"yaja3z": { "x": 99.42, "y": 6.99, "rotation": 95.79, "width": 125, "height": 237 }
+			},
+			"yajaleaf1-1": {
+				"yajaleaf1-1": { "x": 122.82, "y": -0.7, "rotation": 15.72, "width": 323, "height": 140 }
+			},
+			"yajaleaf1-1line": {
+				"yajaleaf1-1line": { "x": 83.94, "y": 34.06, "rotation": 15.72, "width": 389, "height": 232 }
+			},
+			"yajaleaf2-1": {
+				"yajaleaf2-1": { "x": 121.62, "y": -10.56, "rotation": -34.27, "width": 274, "height": 189 }
+			},
+			"yajaleaf2-2": {
+				"yajaleaf2-2": { "x": 104.89, "y": 13.12, "rotation": -129.48, "width": 197, "height": 176 }
+			},
+			"yajaleaf2-3": {
+				"yajaleaf2-3": { "x": 148.87, "y": 25.63, "rotation": 152.86, "width": 263, "height": 181 }
+			},
+			"yajaleaf3-1linez": {
+				"yajaleaf3-1linez": { "x": 84.73, "y": 74.52, "rotation": -79.85, "width": 274, "height": 282 }
+			},
+			"yajaleaf3-1z": {
+				"yajaleaf3-1z": { "x": 116.27, "y": -5.17, "rotation": -79.85, "width": 100, "height": 244 }
+			},
+			"yajatree": {
+				"yajatree": { "x": 75.24, "y": -4.87, "rotation": -109.46, "width": 123, "height": 202 }
+			},
+			"yajatree3line": {
+				"yajatree3line": { "x": 77.76, "y": -5.24, "rotation": -109.46, "width": 128, "height": 205 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"bones": {
+			"top tree": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -2.93 },
+					{ "time": 1.3333 }
+				]
+			},
+			"top tree2": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -5.89 },
+					{ "time": 1.3333 }
+				]
+			},
+			"top tree5": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -6.84 },
+					{ "time": 1.3333 }
+				]
+			},
+			"top tree4": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -3.69 },
+					{ "time": 1.3333 }
+				]
+			},
+			"top tree-root": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -8.35 },
+					{ "time": 1.3333 }
+				]
+			},
+			"top tree6": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -2.68 },
+					{ "time": 1.3333 }
+				]
+			},
+			"top tree8": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -5.52 },
+					{ "time": 1.3333 }
+				]
+			},
+			"top tree9": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -5.26 },
+					{ "time": 1.3333 }
+				]
+			},
+			"top tree7": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -5.81 },
+					{ "time": 1.3333 }
+				]
+			},
+			"top tree3": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -3.06 },
+					{ "time": 1.3333 }
+				]
+			}
+		}
+	}
+}
+}

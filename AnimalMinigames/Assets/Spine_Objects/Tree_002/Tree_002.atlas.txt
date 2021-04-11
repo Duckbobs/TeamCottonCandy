@@ -1,0 +1,153 @@
+
+Tree_002.png
+size: 1997,1150
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+coconut2
+  rotate: false
+  xy: 1115, 1013
+  size: 178, 135
+  orig: 180, 137
+  offset: 1, 1
+  index: -1
+yaja1-1 linedd
+  rotate: false
+  xy: 154, 11
+  size: 297, 419
+  orig: 300, 473
+  offset: 1, 53
+  index: -1
+yaja1-2dd
+  rotate: false
+  xy: 1364, 4
+  size: 334, 144
+  orig: 336, 147
+  offset: 1, 2
+  index: -1
+yaja1-2linedd
+  rotate: true
+  xy: 453, 2
+  size: 553, 306
+  orig: 558, 319
+  offset: 2, 12
+  index: -1
+yaja1-3dd
+  rotate: false
+  xy: 1441, 935
+  size: 255, 213
+  orig: 257, 215
+  offset: 1, 1
+  index: -1
+yaja1-3linez
+  rotate: false
+  xy: 965, 150
+  size: 474, 489
+  orig: 478, 491
+  offset: 1, 1
+  index: -1
+yaja2
+  rotate: false
+  xy: 917, 641
+  size: 196, 507
+  orig: 198, 509
+  offset: 1, 1
+  index: -1
+yaja2-1
+  rotate: true
+  xy: 1441, 171
+  size: 205, 346
+  orig: 208, 348
+  offset: 1, 1
+  index: -1
+yaja2-1line
+  rotate: true
+  xy: 566, 566
+  size: 582, 349
+  orig: 586, 352
+  offset: 2, 2
+  index: -1
+yaja2-2lines
+  rotate: true
+  xy: 207, 557
+  size: 591, 357
+  orig: 594, 373
+  offset: 2, 3
+  index: -1
+yaja2-3
+  rotate: true
+  xy: 1675, 734
+  size: 199, 320
+  orig: 201, 323
+  offset: 1, 2
+  index: -1
+yaja2-3linea
+  rotate: false
+  xy: 1115, 643
+  size: 322, 355
+  orig: 325, 359
+  offset: 2, 3
+  index: -1
+yaja202
+  rotate: false
+  xy: 1675, 465
+  size: 314, 267
+  orig: 317, 270
+  offset: 2, 2
+  index: -1
+yaja2line
+  rotate: false
+  xy: 761, 48
+  size: 202, 516
+  orig: 205, 518
+  offset: 1, 1
+  index: -1
+yaja3-1
+  rotate: true
+  xy: 2, 432
+  size: 716, 203
+  orig: 718, 205
+  offset: 1, 1
+  index: -1
+yaja3-1line
+  rotate: true
+  xy: 2, 3
+  size: 427, 150
+  orig: 429, 178
+  offset: 1, 26
+  index: -1
+yaja3-2
+  rotate: false
+  xy: 1441, 378
+  size: 227, 274
+  orig: 378, 278
+  offset: 150, 3
+  index: -1
+yaja3-2line
+  rotate: false
+  xy: 1439, 654
+  size: 234, 279
+  orig: 238, 281
+  offset: 2, 1
+  index: -1
+yaja3-3
+  rotate: false
+  xy: 965, 2
+  size: 397, 146
+  orig: 399, 148
+  offset: 1, 1
+  index: -1
+yaja3-3line
+  rotate: true
+  xy: 1789, 60
+  size: 403, 150
+  orig: 494, 152
+  offset: 2, 1
+  index: -1
+yajaleaf1-1dd
+  rotate: false
+  xy: 1700, 1000
+  size: 286, 148
+  orig: 290, 150
+  offset: 2, 1
+  index: -1

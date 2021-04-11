@@ -1,0 +1,139 @@
+
+Tree_001.png
+size: 957,2110
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+coconut 1
+  rotate: false
+  xy: 319, 161
+  size: 221, 138
+  orig: 223, 140
+  offset: 1, 1
+  index: -1
+yaja leaf line2
+  rotate: false
+  xy: 542, 2
+  size: 322, 287
+  orig: 324, 290
+  offset: 1, 1
+  index: -1
+yaja leaf1
+  rotate: true
+  xy: 600, 291
+  size: 292, 352
+  orig: 295, 354
+  offset: 1, 1
+  index: -1
+yaja leaf1 line
+  rotate: false
+  xy: 319, 301
+  size: 279, 356
+  orig: 285, 358
+  offset: 1, 1
+  index: -1
+yaja leaf2
+  rotate: false
+  xy: 624, 585
+  size: 316, 219
+  orig: 321, 222
+  offset: 4, 1
+  index: -1
+yajaleaf line
+  rotate: false
+  xy: 2, 1795
+  size: 657, 313
+  orig: 661, 315
+  offset: 2, 1
+  index: -1
+yajaleaf2 line
+  rotate: true
+  xy: 661, 1717
+  size: 391, 294
+  orig: 395, 296
+  offset: 2, 1
+  index: -1
+yajaleaf3-1
+  rotate: true
+  xy: 565, 1162
+  size: 123, 374
+  orig: 126, 376
+  offset: 2, 1
+  index: -1
+yajaleaf3-1 line
+  rotate: true
+  xy: 577, 1287
+  size: 123, 378
+  orig: 125, 380
+  offset: 1, 1
+  index: -1
+yajaleaf3-2line
+  rotate: true
+  xy: 464, 686
+  size: 423, 158
+  orig: 425, 161
+  offset: 1, 2
+  index: -1
+yajaleaf3-2s
+  rotate: true
+  xy: 161, 129
+  size: 422, 156
+  orig: 424, 159
+  offset: 1, 2
+  index: -1
+yajatree1
+  rotate: false
+  xy: 131, 553
+  size: 120, 556
+  orig: 122, 558
+  offset: 1, 1
+  index: -1
+yajatree1-line
+  rotate: false
+  xy: 2, 549
+  size: 127, 560
+  orig: 129, 562
+  offset: 1, 1
+  index: -1
+yajatree2
+  rotate: false
+  xy: 624, 806
+  size: 297, 354
+  orig: 299, 357
+  offset: 1, 2
+  index: -1
+yajatree2-2
+  rotate: false
+  xy: 2, 1111
+  size: 561, 290
+  orig: 564, 294
+  offset: 1, 2
+  index: -1
+yajatree2-2line
+  rotate: true
+  xy: 253, 659
+  size: 450, 209
+  orig: 561, 281
+  offset: 1, 71
+  index: -1
+yajatree2-3
+  rotate: false
+  xy: 2, 1403
+  size: 573, 390
+  orig: 576, 393
+  offset: 1, 1
+  index: -1
+yajatree2-3line
+  rotate: true
+  xy: 2, 87
+  size: 460, 157
+  orig: 570, 159
+  offset: 1, 1
+  index: -1
+yajtree2-1 line
+  rotate: true
+  xy: 577, 1412
+  size: 303, 352
+  orig: 305, 429
+  offset: 1, 76
+  index: -1
