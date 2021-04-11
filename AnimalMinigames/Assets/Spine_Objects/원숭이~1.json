@@ -1,0 +1,228 @@
+{
+"skeleton": {
+	"hash": "l2EZvbUWLhPXSQQaBUFdj0G+dvM",
+	"spine": "3.8.99",
+	"x": -493.88,
+	"y": -44.28,
+	"width": 868.81,
+	"height": 942.19,
+	"images": "../images/TREE1/",
+	"audio": "C:/Users/하쿠/Documents/카카오톡 받은 파일/tree1"
+},
+"bones": [
+	{ "name": "root", "x": 10.14, "y": -81.12 },
+	{ "name": "tree root", "parent": "root", "length": 406.16, "rotation": 87.88, "x": -10.14, "y": 81.12 },
+	{ "name": "tree leaf1", "parent": "tree root", "length": 257.01, "rotation": -110.76, "x": 524.24, "y": 59.22 },
+	{ "name": "tree root2", "parent": "tree root", "length": 312.19, "rotation": -32.3, "x": 563.12, "y": 39.38 },
+	{ "name": "tree root3", "parent": "tree root", "length": 276.11, "rotation": -94.67, "x": 563.92, "y": -0.79 },
+	{ "name": "tree root4", "parent": "tree root", "length": 327.8, "rotation": 96.69, "x": 518.94, "y": 94.12 },
+	{ "name": "tree root5", "parent": "tree root", "length": 289.15, "rotation": 67.51, "x": 550.37, "y": 96.96 },
+	{ "name": "tree root6", "parent": "tree root", "length": 298.81, "rotation": 41.19, "x": 564.29, "y": 64.08 },
+	{ "name": "tree root7", "parent": "tree root", "length": 300.05, "rotation": -12.05, "x": 579.35, "y": 61.43 },
+	{ "name": "tree root8", "parent": "tree root", "length": 327.13, "rotation": 141.08, "x": 516.16, "y": 78.45 },
+	{ "name": "coconut", "parent": "tree root", "length": 88.81, "rotation": 16.96, "x": 448.69, "y": 17.7 }
+],
+"slots": [
+	{ "name": "yajatree1", "bone": "tree root", "attachment": "yajatree1" },
+	{ "name": "yajatree1-line", "bone": "tree root", "attachment": "yajatree1-line" },
+	{ "name": "yajaleaf3-2s", "bone": "tree root3", "attachment": "yajaleaf3-2s" },
+	{ "name": "yajaleaf3-2line", "bone": "tree root3", "attachment": "yajaleaf3-2line" },
+	{ "name": "yajaleaf3-1", "bone": "tree root7", "attachment": "yajaleaf3-1" },
+	{ "name": "yajaleaf3-1 line", "bone": "tree root7", "attachment": "yajaleaf3-1 line" },
+	{ "name": "yajatree2-3", "bone": "tree root4", "attachment": "yajatree2-3" },
+	{ "name": "yajatree2-3line", "bone": "tree root4", "attachment": "yajatree2-3line" },
+	{ "name": "yajatree2-2", "bone": "tree root5", "attachment": "yajatree2-2" },
+	{ "name": "yajatree2-2line", "bone": "tree root5", "attachment": "yajatree2-2line" },
+	{ "name": "yajatree2", "bone": "tree root2", "attachment": "yajatree2" },
+	{ "name": "yajtree2-1 line", "bone": "tree root2", "attachment": "yajtree2-1 line" },
+	{ "name": "coconut 1", "bone": "coconut", "attachment": "coconut 1" },
+	{ "name": "yaja leaf line2", "bone": "tree root6", "attachment": "yaja leaf line2" },
+	{ "name": "yajaleaf2 line", "bone": "tree root6", "attachment": "yajaleaf2 line" },
+	{ "name": "yaja leaf2", "bone": "tree leaf1", "attachment": "yaja leaf2" },
+	{ "name": "yajaleaf line", "bone": "tree leaf1", "attachment": "yajaleaf line" },
+	{ "name": "yaja leaf1", "bone": "tree root8", "attachment": "yaja leaf1" },
+	{ "name": "yaja leaf1 line", "bone": "tree root8", "attachment": "yaja leaf1 line" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"coconut 1": {
+				"coconut 1": { "x": 39.09, "y": -7.16, "rotation": -105.1, "width": 223, "height": 140 }
+			},
+			"yaja leaf1": {
+				"yaja leaf1": { "x": 193, "y": 25.52, "rotation": 130.78, "width": 295, "height": 354 }
+			},
+			"yaja leaf1 line": {
+				"yaja leaf1 line": { "x": 198.12, "y": 18.05, "rotation": 130.78, "width": 285, "height": 358 }
+			},
+			"yaja leaf2": {
+				"yaja leaf2": { "x": 166.51, "y": -28.4, "rotation": 22.62, "width": 321, "height": 222 }
+			},
+			"yajaleaf2 line": {
+				"yajaleaf2 line": { "x": 150.71, "y": 56.21, "rotation": -129.33, "width": 395, "height": 296 }
+			},
+			"yajaleaf3-1": {
+				"yajaleaf3-1": { "x": 130.96, "y": -10.53, "rotation": -76.09, "width": 126, "height": 376 }
+			},
+			"yajaleaf3-1 line": {
+				"yajaleaf3-1 line": { "x": 132.78, "y": -9.56, "rotation": -76.09, "width": 125, "height": 380 }
+			},
+			"yajaleaf3-2line": {
+				"yajaleaf3-2line": { "x": 142.27, "y": -7.33, "rotation": 6.53, "width": 425, "height": 161 }
+			},
+			"yajaleaf3-2s": {
+				"yajaleaf3-2s": { "x": 142.76, "y": -7.28, "rotation": 6.53, "width": 424, "height": 159 }
+			},
+			"yajaleaf line": {
+				"yajaleaf line": { "x": -3.76, "y": -56.55, "rotation": 22.62, "width": 661, "height": 315 }
+			},
+			"yaja leaf line2": {
+				"yaja leaf line2": { "x": 132.86, "y": 30.35, "rotation": -129.33, "width": 324, "height": 290 }
+			},
+			"yajatree1": {
+				"yajatree1": { "x": 238, "y": -7.96, "rotation": -88.14, "width": 122, "height": 558 }
+			},
+			"yajatree1-line": {
+				"yajatree1-line": { "x": 237.45, "y": -7.31, "rotation": -88.14, "width": 129, "height": 562 }
+			},
+			"yajatree2": {
+				"yajatree2": { "x": 180.94, "y": -31.53, "rotation": -55.84, "width": 299, "height": 357 }
+			},
+			"yajatree2-2": {
+				"yajatree2-2": { "x": 154.64, "y": -55.69, "rotation": -157.14, "width": 564, "height": 294 }
+			},
+			"yajatree2-2line": {
+				"yajatree2-2line": { "x": 130.13, "y": 19.17, "rotation": -157.14, "width": 561, "height": 281 }
+			},
+			"yajatree2-3": {
+				"yajatree2-3": { "x": 120.46, "y": -103.77, "rotation": 175.24, "width": 576, "height": 393 }
+			},
+			"yajatree2-3line": {
+				"yajatree2-3line": { "x": 135.58, "y": 17.39, "rotation": 175.24, "width": 570, "height": 159 }
+			},
+			"yajtree2-1 line": {
+				"yajtree2-1 line": { "x": 151.72, "y": -52.57, "rotation": -55.84, "width": 305, "height": 429 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"bones": {
+			"tree root": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -1.4 },
+					{ "time": 1.1, "angle": 0.82 },
+					{ "time": 1.3333 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.6667, "curve": "stepped" },
+					{ "time": 1.3333 }
+				]
+			},
+			"tree root8": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -4.57 },
+					{ "time": 1.3333 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.6667, "curve": "stepped" },
+					{ "time": 1.3333 }
+				]
+			},
+			"tree root7": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -4.39 },
+					{ "time": 1.3333 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.6667, "curve": "stepped" },
+					{ "time": 1.3333 }
+				]
+			},
+			"tree root5": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -6.02 },
+					{ "time": 1.3333 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.6667, "curve": "stepped" },
+					{ "time": 1.3333 }
+				]
+			},
+			"tree root4": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -8.25 },
+					{ "time": 1.3333 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.6667, "curve": "stepped" },
+					{ "time": 1.3333 }
+				]
+			},
+			"tree leaf1": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -4.49 },
+					{ "time": 1.3333 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.6667, "curve": "stepped" },
+					{ "time": 1.3333 }
+				]
+			},
+			"tree root2": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -5.76 },
+					{ "time": 1.3333 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.6667, "curve": "stepped" },
+					{ "time": 1.3333 }
+				]
+			},
+			"tree root3": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -4.39 },
+					{ "time": 1.3333 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.6667, "curve": "stepped" },
+					{ "time": 1.3333 }
+				]
+			},
+			"tree root6": {
+				"rotate": [
+					{},
+					{ "time": 0.6667, "angle": -5.69 },
+					{ "time": 1.3333 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.6667, "curve": "stepped" },
+					{ "time": 1.3333 }
+				]
+			}
+		},
+		"drawOrder": [
+			{ "time": 1.1 }
+		]
+	}
+}
+}
