@@ -1,0 +1,56 @@
+{
+"skeleton": {
+	"hash": "f2c7OZf7GGVmgYNQcopWepRqeUc",
+	"spine": "3.8.99",
+	"x": -186,
+	"y": -126.5,
+	"width": 372,
+	"height": 253,
+	"images": "../images/TREE1/",
+	"audio": "C:/Users/하쿠/Documents/카카오톡 받은 파일/tree1"
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "turnel tree", "bone": "root", "attachment": "turnel tree" },
+	{ "name": "turnel tree line", "bone": "root", "attachment": "turnel tree line" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"turnel tree": {
+				"turnel tree": { "width": 369, "height": 251 }
+			},
+			"turnel tree line": {
+				"turnel tree line": { "width": 372, "height": 253 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"bones": {
+			"root": {
+				"rotate": [
+					{},
+					{ "time": 0.0667, "angle": 2.85 },
+					{ "time": 0.1667, "angle": -3.2 },
+					{ "time": 0.2667, "angle": 2.85 },
+					{ "time": 0.3667, "angle": -3.2 },
+					{ "time": 0.5 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.0667, "x": -1 },
+					{ "time": 0.1667, "x": 1 },
+					{ "time": 0.2667, "x": -1 },
+					{ "time": 0.3667, "x": 1 },
+					{ "time": 0.5 }
+				]
+			}
+		}
+	}
+}
+}

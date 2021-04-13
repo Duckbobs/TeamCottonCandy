@@ -1,0 +1,20 @@
+
+tunnel_002.png
+size: 742,255
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+turnel tree
+  rotate: false
+  xy: 374, 4
+  size: 366, 249
+  orig: 369, 251
+  offset: 1, 1
+  index: -1
+turnel tree line
+  rotate: false
+  xy: 2, 2
+  size: 370, 251
+  orig: 372, 253
+  offset: 1, 1
+  index: -1

@@ -41,7 +41,7 @@ public class CameraArea_Stage : MonoBehaviour
 
         Vector3 distance = PrevMousePosition - Input.mousePosition;
         PrevMousePosition = Input.mousePosition;
-        Vector3 movePosition = new Vector3(distance.x * Time.deltaTime, distance.y * Time.deltaTime, 0.0f);
+        Vector3 movePosition = new Vector3(distance.x * Time.deltaTime, distance.y * Time.deltaTime, 0.0f) * 3.0f;
 
         Mover.position += movePosition;
         transform.position += movePosition;
