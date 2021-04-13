@@ -7,7 +7,7 @@ public class Vspeed : MonoBehaviour
     public float jumpSpeed = 14f;
     public float gravity = 1f;
     public float groundY;
-    float vspeed = 0;
+    public float vspeed = 0;
     public int maxJump = 1;
     int isJump = 0;
 
@@ -42,7 +42,8 @@ public class Vspeed : MonoBehaviour
         {
             vspeed = jumpSpeed;
             isJump++;
-            bgmAudioSource.PlayOneShot(soundJump);
+            if(bgmAudioSource != null)
+                bgmAudioSource.PlayOneShot(soundJump);
         }
     }
     public bool doJump_isJump()
@@ -51,7 +52,8 @@ public class Vspeed : MonoBehaviour
         {
             vspeed = jumpSpeed;
             isJump++;
-            bgmAudioSource.PlayOneShot(soundJump);
+            if (bgmAudioSource != null)
+                bgmAudioSource.PlayOneShot(soundJump);
             return true;
         }
         return false;

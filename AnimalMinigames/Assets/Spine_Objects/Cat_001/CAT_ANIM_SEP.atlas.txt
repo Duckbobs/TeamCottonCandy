@@ -1,0 +1,76 @@
+
+CAT_ANIM_SEP.png
+size: 399,163
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 175, 55
+  size: 106, 89
+  orig: 109, 91
+  offset: 1, 1
+  index: -1
+head
+  rotate: false
+  xy: 2, 9
+  size: 171, 152
+  orig: 173, 154
+  offset: 1, 1
+  index: -1
+leaft_ear
+  rotate: true
+  xy: 351, 114
+  size: 47, 46
+  orig: 49, 48
+  offset: 1, 1
+  index: -1
+left_arm
+  rotate: true
+  xy: 264, 4
+  size: 49, 47
+  orig: 52, 50
+  offset: 1, 1
+  index: -1
+left_leg
+  rotate: false
+  xy: 358, 40
+  size: 27, 40
+  orig: 30, 42
+  offset: 1, 1
+  index: -1
+muffler
+  rotate: true
+  xy: 313, 10
+  size: 61, 43
+  orig: 63, 46
+  offset: 1, 2
+  index: -1
+right_arm
+  rotate: false
+  xy: 175, 2
+  size: 37, 51
+  orig: 40, 55
+  offset: 2, 2
+  index: -1
+right_ear
+  rotate: false
+  xy: 214, 4
+  size: 48, 49
+  orig: 50, 51
+  offset: 1, 1
+  index: -1
+right_leg
+  rotate: true
+  xy: 351, 82
+  size: 30, 40
+  orig: 33, 42
+  offset: 2, 1
+  index: -1
+tail
+  rotate: true
+  xy: 266, 73
+  size: 88, 83
+  orig: 90, 86
+  offset: 1, 2
+  index: -1

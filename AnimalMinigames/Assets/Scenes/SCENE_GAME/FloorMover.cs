@@ -24,7 +24,7 @@ public class FloorMover : MonoBehaviour
                 objects.Add(obj);
             }
         }
-        floorWidth = objects[0].gameObject.GetComponent<SpriteRenderer>().size.x;
+        floorWidth = objects[0].gameObject.GetComponent<SpriteRenderer>().bounds.size.x;
     }
 
     // Update is called once per frame
