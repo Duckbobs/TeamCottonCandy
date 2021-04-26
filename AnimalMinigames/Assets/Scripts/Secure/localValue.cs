@@ -22,7 +22,7 @@ public class localValue : MonoBehaviour
     private void Update()
     {
     }
-    public void SetAdd(string key, float value)
+    public void Add(string key, float value)
     {
         float saved_value;
         if (Values.TryGetValue(key, out saved_value))

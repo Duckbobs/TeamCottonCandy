@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/\uC778\uC601\uC528 \uC5EC\uAE30\uC11C \uB9CC\uB4E4\uC5B4\uC8FC\uC138\uC694/Test.unity"
     guid: 0a77fcd6edb31444daf50c63915b059d
+  - enabled: 1
+    path: Assets/Scenes/SCENE_HOUSE_2/HouseScene.unity
+    guid: 3804511101ad6eb4cb70556c08731a80
   m_configObjects: {}

@@ -5,9 +5,9 @@ using UnityEngine;
 public static class Global
 {
     public static localValue ins = null;
-    public static void SetAdd(string key, float value)
+    public static void Add(string key, float value)
     {
-        ins.SetAdd(key, value);
+        ins.Add(key, value);
     }
     public static void Set(string key, float value)
     {
