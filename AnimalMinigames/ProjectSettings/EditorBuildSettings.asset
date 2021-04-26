@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SCENE_GAME/Monkey_01/Monkey_01.unity
     guid: 18bb9d6a9f2d2d24b8f1573a8a977115
   - enabled: 1
-    path: "Assets/Scenes/\uC778\uC601\uC528 \uC5EC\uAE30\uC11C \uB9CC\uB4E4\uC5B4\uC8FC\uC138\uC694/Test.unity"
+    path: Assets/Scenes/SCENE_STORY/Test.unity
     guid: 0a77fcd6edb31444daf50c63915b059d
   - enabled: 1
     path: Assets/Scenes/SCENE_HOUSE_2/HouseScene.unity
