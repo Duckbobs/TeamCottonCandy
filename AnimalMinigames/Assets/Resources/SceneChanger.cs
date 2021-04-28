@@ -19,7 +19,7 @@ public class SceneChanger : MonoBehaviour
         ProgressBar.fillAmount = 0.0f;
         var ao = SceneManager.LoadSceneAsync(scene_name);
         ao.allowSceneActivation = false;
-        var timer = 0.0f;
+        var timer = -0.5f;
         while (!ao.isDone)
         {
             yield return null;

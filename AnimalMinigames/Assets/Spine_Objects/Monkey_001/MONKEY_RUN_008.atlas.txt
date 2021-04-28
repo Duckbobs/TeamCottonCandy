@@ -1,0 +1,202 @@
+
+MONKEY_RUN_008.png
+size: 1159,491
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+레이어 1
+  rotate: true
+  xy: 929, 63
+  size: 36, 70
+  orig: 38, 72
+  offset: 1, 1
+  index: -1
+레이어 10
+  rotate: false
+  xy: 692, 117
+  size: 106, 90
+  orig: 108, 92
+  offset: 1, 1
+  index: -1
+레이어 11
+  rotate: false
+  xy: 1001, 78
+  size: 19, 21
+  orig: 21, 23
+  offset: 1, 1
+  index: -1
+레이어 12
+  rotate: false
+  xy: 800, 117
+  size: 71, 90
+  orig: 73, 92
+  offset: 1, 1
+  index: -1
+레이어 13
+  rotate: false
+  xy: 875, 53
+  size: 52, 85
+  orig: 54, 88
+  offset: 1, 2
+  index: -1
+레이어 14
+  rotate: false
+  xy: 1093, 51
+  size: 57, 35
+  orig: 59, 37
+  offset: 1, 1
+  index: -1
+레이어 15
+  rotate: false
+  xy: 995, 21
+  size: 38, 40
+  orig: 40, 42
+  offset: 1, 1
+  index: -1
+레이어 16
+  rotate: false
+  xy: 1035, 32
+  size: 40, 31
+  orig: 42, 33
+  offset: 1, 1
+  index: -1
+레이어 17
+  rotate: true
+  xy: 641, 12
+  size: 57, 41
+  orig: 59, 43
+  offset: 1, 1
+  index: -1
+레이어 2
+  rotate: true
+  xy: 873, 140
+  size: 349, 279
+  orig: 351, 281
+  offset: 1, 1
+  index: -1
+레이어 3
+  rotate: true
+  xy: 1023, 65
+  size: 35, 68
+  orig: 37, 70
+  offset: 1, 1
+  index: -1
+레이어 4
+  rotate: false
+  xy: 578, 71
+  size: 112, 136
+  orig: 114, 138
+  offset: 1, 1
+  index: -1
+레이어 5
+  rotate: true
+  xy: 875, 2
+  size: 49, 63
+  orig: 52, 65
+  offset: 1, 1
+  index: -1
+레이어 6
+  rotate: false
+  xy: 553, 14
+  size: 51, 53
+  orig: 53, 55
+  offset: 1, 1
+  index: -1
+레이어 7
+  rotate: true
+  xy: 1023, 102
+  size: 36, 68
+  orig: 39, 70
+  offset: 1, 1
+  index: -1
+레이어 8
+  rotate: false
+  xy: 606, 2
+  size: 33, 67
+  orig: 35, 69
+  offset: 1, 1
+  index: -1
+레이어 9
+  rotate: false
+  xy: 692, 28
+  size: 104, 87
+  orig: 106, 89
+  offset: 1, 1
+  index: -1
+몸
+  rotate: false
+  xy: 464, 69
+  size: 112, 138
+  orig: 114, 140
+  offset: 1, 1
+  index: -1
+얼굴
+  rotate: false
+  xy: 464, 209
+  size: 407, 280
+  orig: 409, 282
+  offset: 1, 1
+  index: -1
+오른쪽눈
+  rotate: true
+  xy: 464, 14
+  size: 53, 87
+  orig: 56, 89
+  offset: 2, 1
+  index: -1
+오른쪽눈썹
+  rotate: true
+  xy: 684, 3
+  size: 23, 26
+  orig: 25, 28
+  offset: 1, 1
+  index: -1
+오른팔
+  rotate: false
+  xy: 940, 6
+  size: 53, 55
+  orig: 55, 57
+  offset: 1, 1
+  index: -1
+왼쪽눈
+  rotate: false
+  xy: 798, 22
+  size: 75, 93
+  orig: 77, 95
+  offset: 1, 1
+  index: -1
+왼쪽눈썹
+  rotate: false
+  xy: 1035, 9
+  size: 35, 21
+  orig: 37, 24
+  offset: 1, 1
+  index: -1
+왼팔
+  rotate: true
+  xy: 1093, 88
+  size: 50, 64
+  orig: 53, 70
+  offset: 1, 1
+  index: -1
+용지
+  rotate: false
+  xy: 2, 4
+  size: 460, 485
+  orig: 462, 487
+  offset: 1, 1
+  index: -1
+입
+  rotate: false
+  xy: 929, 101
+  size: 92, 37
+  orig: 95, 39
+  offset: 2, 1
+  index: -1
+코
+  rotate: false
+  xy: 1077, 54
+  size: 14, 9
+  orig: 21, 11
+  offset: 1, 1
+  index: -1

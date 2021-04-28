@@ -25,10 +25,10 @@ public class BananaSpawner : MonoBehaviour
             timer += Time.deltaTime * 0.5f;
         }
         timer_jump += Time.deltaTime;
-        if (timer >= 0.1f)
+        if (timer >= 0.15f)
         {
             Instantiate(banana, transform.position, Quaternion.identity);
-            timer = timer - 0.1f;
+            timer = timer - 0.15f;
         }
 
         if (timer_jump >= 0)
