@@ -16,17 +16,10 @@ public class UI_PanelControl : MonoBehaviour
             if (ObCanvas.transform.GetChild(i).GetComponent<UI_Panel>().uiName.Equals(uiName))
             {
                 uiObject = ObCanvas.transform.GetChild(i).gameObject;
+                isActive = uiObject.active;
                 Debug.Log(uiObject.name);
+                break;
             }
-        }
-        if (uiName.Equals("SHOP_Close"))
-        {
-            uiObject = ObCanvas.transform.GetChild(1).gameObject;
-            isActive = true;
-        }else if (uiName.Equals("ACHIEVE_Close"))
-        {
-            uiObject = ObCanvas.transform.GetChild(2).gameObject;
-            isActive = true;
         }
         ////////////////////////////////////////////////////////////
         if (isActive)
