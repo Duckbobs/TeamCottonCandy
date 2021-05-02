@@ -1,5 +1,5 @@
 
-MONKEY_RUN_008.png
+MONKEY___ANIM.png
 size: 1159,491
 format: RGBA8888
 filter: Linear,Linear

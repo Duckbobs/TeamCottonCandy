@@ -12,7 +12,7 @@ public class Vspeed : MonoBehaviour
     int isJump = 0;
 
     public AudioClip soundJump;
-    public AudioSource bgmAudioSource;
+    public AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,8 +42,8 @@ public class Vspeed : MonoBehaviour
         {
             vspeed = jumpSpeed;
             isJump++;
-            if(bgmAudioSource != null)
-                bgmAudioSource.PlayOneShot(soundJump);
+            if(audioSource != null)
+                audioSource.PlayOneShot(soundJump);
         }
     }
     public bool doJump_isJump()
@@ -52,8 +52,8 @@ public class Vspeed : MonoBehaviour
         {
             vspeed = jumpSpeed;
             isJump++;
-            if (bgmAudioSource != null)
-                bgmAudioSource.PlayOneShot(soundJump);
+            if (audioSource != null)
+                audioSource.PlayOneShot(soundJump);
             return true;
         }
         return false;

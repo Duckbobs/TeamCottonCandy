@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class CollisionEvent : MonoBehaviour
 {
     public AudioClip soundPoint;
-    public AudioSource bgmAudioSource;
+    public AudioSource audioSource;
     public bool isPlayer = false;
     public Text textUI;
     private void OnTriggerEnter2D(Collider2D collision)
@@ -17,7 +17,7 @@ public class CollisionEvent : MonoBehaviour
             if (isPlayer)
             {
                 // 획득 사운드 재생
-                bgmAudioSource.PlayOneShot(soundPoint);
+                audioSource.PlayOneShot(soundPoint);
                 GameSystem_Monkey_01.Score += Random.Range(100, 200);
                 textUI.text = StringUtil.NumberFormat(GameSystem_Monkey_01.Score);
             }
