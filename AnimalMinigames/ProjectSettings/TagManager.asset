@@ -8,6 +8,7 @@ TagManager:
   - Floor
   - Object
   - HouseObject
+  - Event_End
   layers:
   - Default
   - TransparentFX
