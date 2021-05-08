@@ -35,6 +35,7 @@ public class CameraArea : MonoBehaviour
         if (VirtualCamera.m_Lens.OrthographicSize < MinCameraScale) VirtualCamera.m_Lens.OrthographicSize = MinCameraScale;
 
         // 카메라의 영역을 땅에 맞게 설정합니다.
+        /*
         foreach (GameObject floorObject in floorObjects)
         {
             float camDownArea = transform.position.y - CameraArea2D.size.y * 0.5f;
@@ -43,17 +44,18 @@ public class CameraArea : MonoBehaviour
             if (camDownArea > objDownArea)
                 CameraArea2D.size = new Vector2(CameraArea2D.size.x, -objDownArea * 2.0f);
         }
+        */
+        
     }
     private void OnMouseDown()
     {
         PrevMousePosition = Input.mousePosition;
+        Debug.Log("응애");
     }
     private void OnMouseDrag()
     {
-        if (EventSystem.current.IsPointerOverGameObject())
+        if (EventSystem.current.IsPointerOverGameObject()/*HouseEditor.isEditorMode*/)
             return;
-
-
 
         VirtualCamera.transform.position = Camera.main.transform.position;
 
@@ -62,5 +64,6 @@ public class CameraArea : MonoBehaviour
         Vector3 movePosition = VirtualCamera.transform.position + new Vector3(distance.x * Time.deltaTime, distance.y * Time.deltaTime, 0.0f);
 
         VirtualCamera.transform.position = movePosition;
+        Debug.Log("?");
     }
 }
