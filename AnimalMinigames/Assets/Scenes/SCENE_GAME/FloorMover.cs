@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FloorMover : MonoBehaviour
 {
+    public static float playerSpeed = 0;
     public float floorSpeed = 0;
     public bool isLoop = true;
 
@@ -37,7 +38,7 @@ public class FloorMover : MonoBehaviour
     void Update()
     {
         delta = Mathf.Min((float)System.Math.Round(Time.deltaTime, 7), 0.02f);
-        move = (float)System.Math.Round(floorSpeed * delta, 7);
+        move = (float)System.Math.Round((floorSpeed + playerSpeed) * delta, 7);
         foreach (Transform obj in objects)
         {
             obj.transform.localPosition = new Vector2(obj.transform.localPosition.x - move, obj.transform.localPosition.y);

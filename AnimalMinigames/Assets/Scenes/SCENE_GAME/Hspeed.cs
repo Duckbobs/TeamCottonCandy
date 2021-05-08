@@ -14,7 +14,7 @@ public class Hspeed : MonoBehaviour
     void Update()
     {
         GetComponent<Transform>().transform.position = new Vector3(
-            gameObject.transform.position.x + hspeed * Time.deltaTime, gameObject.transform.position.y, gameObject.transform.position.z);
+            gameObject.transform.position.x + (hspeed - FloorMover.playerSpeed) * Time.deltaTime, gameObject.transform.position.y, gameObject.transform.position.z);
         if (gameObject.transform.position.x < -6)
         {
             Destroy(gameObject);
