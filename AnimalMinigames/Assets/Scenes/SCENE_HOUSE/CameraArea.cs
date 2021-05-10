@@ -50,7 +50,6 @@ public class CameraArea : MonoBehaviour
     private void OnMouseDown()
     {
         PrevMousePosition = Input.mousePosition;
-        Debug.Log("응애");
     }
     private void OnMouseDrag()
     {
@@ -64,6 +63,5 @@ public class CameraArea : MonoBehaviour
         Vector3 movePosition = VirtualCamera.transform.position + new Vector3(distance.x * Time.deltaTime, distance.y * Time.deltaTime, 0.0f);
 
         VirtualCamera.transform.position = movePosition;
-        Debug.Log("?");
     }
 }

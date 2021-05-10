@@ -72,16 +72,13 @@ public class GridMovement : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        Debug.Log("다운");
         if (!HouseEditor.isEditorMode)
             return;
-        Debug.Log("다운2");
         if (EventSystem.current.IsPointerOverGameObject())
             return;
 
         if (selectID == -1)
         {
-            Debug.Log("다운 조건");
 
             selectID = gameObject.GetInstanceID();
             startMyPoint = transform.localPosition;
