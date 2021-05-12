@@ -11,6 +11,9 @@ public class PlayerMovement : MonoBehaviour
     public int maxJump = 1;
     int isJump = 0;
 
+    public static float playerBoostTime = 0;
+    public static float playerSpeed = 0;
+
     public AudioClip soundJump;
     public AudioSource audioSource;
     // Start is called before the first frame update
@@ -21,6 +24,15 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (playerBoostTime > 0)
+        {
+            playerBoostTime -= 1.0f * Time.deltaTime;
+            playerSpeed = 20;
+        }
+        else
+        {
+            playerSpeed = 2;
+        }
         vspeed -= gravity * 70 * Time.deltaTime;
         GetComponent<Transform>().transform.localPosition = new Vector3(
             gameObject.transform.localPosition.x, gameObject.transform.localPosition.y + vspeed * Time.deltaTime, gameObject.transform.localPosition.z);
@@ -34,6 +46,8 @@ public class PlayerMovement : MonoBehaviour
                     gameObject.transform.localPosition.x, groundY, gameObject.transform.localPosition.z);
             }
         }
+
+
     }
 
     public void doJump()

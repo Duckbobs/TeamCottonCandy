@@ -14,7 +14,7 @@ public class UI_BtnDownEvent_Monkey : MonoBehaviour, IPointerDownHandler, IPoint
         {
             if (Time.time - pressedTime > 0.1f)
             {
-                FloorMover.playerSpeed += 0.1f;
+                PlayerMovement.playerSpeed += 0.1f;
             }
         }
     }

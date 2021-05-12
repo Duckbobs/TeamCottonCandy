@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class FloorMover : MonoBehaviour
 {
-    public static float playerSpeed = 0;
     public float floorSpeed = 0;
     public bool isLoop = true;
 
@@ -21,7 +20,7 @@ public class FloorMover : MonoBehaviour
 
         foreach (Transform obj in comps)
         {
-            if (obj.tag == "Floor")
+            if (obj.tag == "Floor" || obj.tag == "Item")
             {
                 obj.transform.localScale = new Vector2(obj.transform.localScale.x + 0.001f, obj.transform.localScale.y);
                 objects.Add(obj);
@@ -38,7 +37,7 @@ public class FloorMover : MonoBehaviour
     void Update()
     {
         delta = Mathf.Min((float)System.Math.Round(Time.deltaTime, 7), 0.02f);
-        move = (float)System.Math.Round((floorSpeed + playerSpeed) * delta, 7);
+        move = (float)System.Math.Round((floorSpeed + PlayerMovement.playerSpeed) * delta, 7);
         foreach (Transform obj in objects)
         {
             obj.transform.localPosition = new Vector2(obj.transform.localPosition.x - move, obj.transform.localPosition.y);

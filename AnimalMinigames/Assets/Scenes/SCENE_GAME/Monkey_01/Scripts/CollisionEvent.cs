@@ -11,16 +11,20 @@ public class CollisionEvent : MonoBehaviour
     public Text textUI;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Object")
+        if (isPlayer)
         {
-            Destroy(collision.gameObject);
-            if (isPlayer)
+            if (collision.tag == "Object")
             {
                 // 획득 사운드 재생
                 audioSource.PlayOneShot(soundPoint);
                 GameSystem_Monkey_01.Score += Random.Range(100, 200);
                 textUI.text = StringUtil.NumberFormat(GameSystem_Monkey_01.Score);
             }
+            else if (collision.tag == "Item")
+            {
+                PlayerMovement.playerBoostTime = 3.0f;
+            }
+            collision.gameObject.SetActive(false);
         }
     }
 }

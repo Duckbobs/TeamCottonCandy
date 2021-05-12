@@ -9,6 +9,7 @@ TagManager:
   - Object
   - HouseObject
   - Event_End
+  - Item
   layers:
   - Default
   - TransparentFX

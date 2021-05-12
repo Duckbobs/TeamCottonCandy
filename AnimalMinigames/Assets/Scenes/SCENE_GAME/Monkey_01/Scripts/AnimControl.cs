@@ -19,7 +19,13 @@ public class AnimControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(compVspeed.IsJump() == false)
+        skeleton.timeScale = PlayerMovement.playerSpeed/2 + 5;
+
+        if (PlayerMovement.playerBoostTime > 0)
+        {
+            state = "MONKEY__RUN2";
+        }
+        else if (compVspeed.IsJump() == false)
             state = "MONKEY__RUN";
         else if (compVspeed.vspeed > 0 && compVspeed.GetJumpCount() > 1)
             state = "MONKEY__Roll2";
@@ -29,7 +35,7 @@ public class AnimControl : MonoBehaviour
         if (beforeState != state)
         {
             beforeState = state;
-            skeleton.state.SetAnimation(0, state, (state == "MONKEY__RUN"));
+            skeleton.state.SetAnimation(0, state, (state == "MONKEY__RUN" || state == "MONKEY__RUN2"));
         }
     }
 }
