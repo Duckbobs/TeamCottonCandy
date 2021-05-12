@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Vspeed : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     public float jumpSpeed = 14f;
     public float gravity = 1f;
@@ -19,7 +19,7 @@ public class Vspeed : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void Update()
+    void Update()
     {
         vspeed -= gravity * 70 * Time.deltaTime;
         GetComponent<Transform>().transform.localPosition = new Vector3(

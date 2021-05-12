@@ -1,0 +1,76 @@
+
+monkey_anim_009.png
+size: 366,147
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+layer4
+  rotate: true
+  xy: 180, 60
+  size: 85, 67
+  orig: 85, 67
+  offset: 0, 0
+  index: -1
+skin/layer4
+  rotate: true
+  xy: 249, 60
+  size: 85, 47
+  orig: 85, 47
+  offset: 0, 0
+  index: -1
+skin/layer8
+  rotate: true
+  xy: 298, 60
+  size: 85, 38
+  orig: 85, 38
+  offset: 0, 0
+  index: -1
+레이어 1
+  rotate: false
+  xy: 338, 74
+  size: 19, 36
+  orig: 19, 36
+  offset: 0, 0
+  index: -1
+레이어 3
+  rotate: false
+  xy: 338, 37
+  size: 18, 35
+  orig: 18, 35
+  offset: 0, 0
+  index: -1
+레이어 9
+  rotate: true
+  xy: 252, 5
+  size: 53, 46
+  orig: 55, 48
+  offset: 1, 1
+  index: -1
+몸
+  rotate: true
+  xy: 180, 2
+  size: 56, 70
+  orig: 56, 70
+  offset: 0, 0
+  index: -1
+얼굴
+  rotate: false
+  xy: 2, 4
+  size: 176, 141
+  orig: 176, 141
+  offset: 0, 0
+  index: -1
+오른팔
+  rotate: true
+  xy: 300, 31
+  size: 27, 29
+  orig: 27, 29
+  offset: 0, 0
+  index: -1
+왼팔
+  rotate: false
+  xy: 338, 112
+  size: 26, 33
+  orig: 26, 33
+  offset: 0, 0
+  index: -1
