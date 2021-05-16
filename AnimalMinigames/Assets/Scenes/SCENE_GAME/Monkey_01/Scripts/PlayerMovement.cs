@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (modeTwoLines)
         {
-            GetComponent<Transform>().transform.localPosition = new Vector3(gameObject.transform.localPosition.x, Mathf.Lerp(gameObject.transform.localPosition.y, modeTwoLines_groundY, 0.3f), gameObject.transform.localPosition.z);
+            GetComponent<Transform>().transform.localPosition = new Vector3(gameObject.transform.localPosition.x, Mathf.Lerp(gameObject.transform.localPosition.y, modeTwoLines_groundY, 0.1f), gameObject.transform.localPosition.z);
             vspeed = 0;
         }
         else
@@ -77,7 +77,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (modeTwoLines_groundY == groundY)
             {
-                modeTwoLines_groundY = groundY + 1.0f;
+                modeTwoLines_groundY = groundY - 2.0f;
             }
             else
             {
