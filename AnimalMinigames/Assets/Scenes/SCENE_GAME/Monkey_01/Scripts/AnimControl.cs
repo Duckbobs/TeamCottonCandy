@@ -21,21 +21,25 @@ public class AnimControl : MonoBehaviour
     {
         skeleton.timeScale = PlayerMovement.playerSpeed/2 + 5;
 
-        if (PlayerMovement.playerBoostTime > 0)
+        if (PlayerMovement.playerDamagedTime > 0)
         {
-            state = "MONKEY__RUN2";
+            state = "MONKEY_HIT";
+        }
+        else if (PlayerMovement.playerBoostTime > 0)
+        {
+            state = "MONKEY__SPEEDRUN";
         }
         else if (compVspeed.IsJump() == false)
             state = "MONKEY__RUN";
         else if (compVspeed.vspeed > 0 && compVspeed.GetJumpCount() > 1)
-            state = "MONKEY__Roll2";
+            state = "MONKEY__Roll";
         else if(compVspeed.vspeed > 0)
             state = "MONKEY_JUMP";
 
         if (beforeState != state)
         {
             beforeState = state;
-            skeleton.state.SetAnimation(0, state, (state == "MONKEY__RUN" || state == "MONKEY__RUN2"));
+            skeleton.state.SetAnimation(0, state, (state == "MONKEY__RUN" || state == "MONKEY__SPEEDRUN"));
         }
     }
 }

@@ -13,18 +13,23 @@ public class CollisionEvent : MonoBehaviour
     {
         if (isPlayer)
         {
-            if (collision.tag == "Object")
-            {
-                // 획득 사운드 재생
-                audioSource.PlayOneShot(soundPoint);
-                GameSystem_Monkey_01.Score += Random.Range(100, 200);
-                textUI.text = StringUtil.NumberFormat(GameSystem_Monkey_01.Score);
+            switch (collision.tag) {
+                case "Object":
+                    // 획득 사운드 재생
+                    audioSource.PlayOneShot(soundPoint);
+                    GameSystem_Monkey_01.Score += Random.Range(100, 200);
+                    textUI.text = StringUtil.NumberFormat(GameSystem_Monkey_01.Score);
+                    collision.gameObject.SetActive(false);
+                    break;
+                case "Item":
+                    PlayerMovement.playerBoostTime = 3.0f;
+                    collision.gameObject.SetActive(false);
+                    break;
+                case "Obstacle":
+                    PlayerMovement.playerDamagedTime = 0.3f;
+                    collision.gameObject.SetActive(false);
+                    break;
             }
-            else if (collision.tag == "Item")
-            {
-                PlayerMovement.playerBoostTime = 3.0f;
-            }
-            collision.gameObject.SetActive(false);
         }
     }
 }

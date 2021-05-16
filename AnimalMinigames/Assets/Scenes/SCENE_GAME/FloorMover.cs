@@ -20,7 +20,7 @@ public class FloorMover : MonoBehaviour
 
         foreach (Transform obj in comps)
         {
-            if (obj.tag == "Floor" || obj.tag == "Item")
+            if (obj.tag == "Floor" || obj.tag == "Item" || obj.tag == "Obstacle")
             {
                 obj.transform.localScale = new Vector2(obj.transform.localScale.x + 0.001f, obj.transform.localScale.y);
                 objects.Add(obj);
