@@ -8,6 +8,9 @@ TagManager:
   - Floor
   - Object
   - HouseObject
+  - Event_End
+  - Item
+  - Obstacle
   layers:
   - Default
   - TransparentFX

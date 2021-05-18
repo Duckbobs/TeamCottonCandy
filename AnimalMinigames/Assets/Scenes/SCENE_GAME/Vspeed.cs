@@ -19,7 +19,7 @@ public class Vspeed : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         vspeed -= gravity * 70 * Time.deltaTime;
         GetComponent<Transform>().transform.localPosition = new Vector3(
@@ -66,5 +66,9 @@ public class Vspeed : MonoBehaviour
     public bool IsJump()
     {
         return (isJump > 0);
+    }
+    public int GetJumpCount()
+    {
+        return isJump;
     }
 }

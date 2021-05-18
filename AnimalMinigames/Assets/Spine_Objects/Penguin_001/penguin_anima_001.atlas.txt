@@ -1,0 +1,48 @@
+
+penguin_anima_001.png
+size: 227,202
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: true
+  xy: 2, 41
+  size: 159, 223
+  orig: 162, 225
+  offset: 1, 1
+  index: -1
+Left arm
+  rotate: false
+  xy: 52, 5
+  size: 38, 34
+  orig: 40, 36
+  offset: 1, 1
+  index: -1
+Left leg
+  rotate: false
+  xy: 132, 6
+  size: 34, 33
+  orig: 36, 35
+  offset: 1, 1
+  index: -1
+Tail
+  rotate: false
+  xy: 2, 2
+  size: 48, 37
+  orig: 51, 39
+  offset: 2, 1
+  index: -1
+right arm
+  rotate: false
+  xy: 92, 7
+  size: 38, 32
+  orig: 40, 34
+  offset: 1, 1
+  index: -1
+right leg
+  rotate: false
+  xy: 168, 9
+  size: 34, 30
+  orig: 36, 32
+  offset: 1, 1
+  index: -1

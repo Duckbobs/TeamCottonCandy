@@ -5,6 +5,8 @@ using UnityEngine;
 public class FloorMover : MonoBehaviour
 {
     public float floorSpeed = 0;
+    public bool isLoop = true;
+
     private float floorWidth = 0;
     List<Transform> objects;
     Transform rightObject = null;
@@ -18,7 +20,7 @@ public class FloorMover : MonoBehaviour
 
         foreach (Transform obj in comps)
         {
-            if (obj.tag == "Floor")
+            if (obj.tag == "Floor" || obj.tag == "Item" || obj.tag == "Obstacle")
             {
                 obj.transform.localScale = new Vector2(obj.transform.localScale.x + 0.001f, obj.transform.localScale.y);
                 objects.Add(obj);
@@ -29,30 +31,23 @@ public class FloorMover : MonoBehaviour
                 }
             }
         }
-        //floorWidth = objects[0].gameObject.GetComponent<SpriteRenderer>().bounds.size.x;
     }
 
     // Update is called once per frame
     void Update()
     {
         delta = Mathf.Min((float)System.Math.Round(Time.deltaTime, 7), 0.02f);
-        move = (float)System.Math.Round(floorSpeed * delta, 7);
-        //maxRight = 0;
-        //rightObject = null;
-        //destroyObject = null;
+        move = (float)System.Math.Round((floorSpeed + PlayerMovement.playerSpeed) * delta, 7);
         foreach (Transform obj in objects)
         {
-            if (obj.transform.localPosition.x <= 0)
-                obj.transform.localPosition = new Vector2(obj.localPosition.x + floorWidth, obj.transform.localPosition.y);
-                //destroyObject = obj;
             obj.transform.localPosition = new Vector2(obj.transform.localPosition.x - move, obj.transform.localPosition.y);
-            //if (obj.transform.localPosition.x > maxRight)
-            //{
-            //    maxRight = obj.transform.localPosition.x;
-            //    rightObject = obj;
-            //}
+            if (obj.transform.localPosition.x <= 0)
+            {
+                if (isLoop)
+                {
+                    obj.transform.localPosition = new Vector2(obj.localPosition.x + floorWidth, obj.transform.localPosition.y);
+                }
+            }
         }
-        //if (destroyObject != null && rightObject != null)
-        //    destroyObject.transform.localPosition = new Vector2(rightObject.transform.localPosition.x + floorWidth, rightObject.transform.localPosition.y);
     }
 }
