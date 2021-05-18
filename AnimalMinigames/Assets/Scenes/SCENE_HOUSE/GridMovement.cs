@@ -18,6 +18,7 @@ public class GridMovement : MonoBehaviour
         if (gameObject.GetInstanceID() == selectID)
         {
             transform.localPosition = GetGridPosition(startMyPoint + GetMousePoint() - startMousePoint);
+            Debug.Log("selectID : " + selectID);
         }
     }
 
@@ -78,6 +79,7 @@ public class GridMovement : MonoBehaviour
 
         if (selectID == -1)
         {
+
             selectID = gameObject.GetInstanceID();
             startMyPoint = transform.localPosition;
             startMousePoint = GetMousePoint();

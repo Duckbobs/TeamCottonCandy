@@ -6,10 +6,16 @@ using UnityEngine;
 public class HouseEditor : MonoBehaviour
 {
     public static bool isEditorMode = false;
+    // 편집oj
     public GameObject EditorOpener;
+    // 확인 oj
     public GameObject Editor;
+    public GameObject Tile;
+    
     public Dictionary<int, Vector2> HouseObjectsPosition = new Dictionary<int, Vector2>();
 
+    //slot01
+    public GameObject[] slotPrefab;
     public void OpenEditor()
     {
         if (isEditorMode == false)
@@ -17,7 +23,7 @@ public class HouseEditor : MonoBehaviour
             isEditorMode = true;
             Editor.SetActive(true);
             EditorOpener.SetActive(false);
-
+            Tile.SetActive(true);
             SavePositions();
         }
     }
@@ -29,6 +35,7 @@ public class HouseEditor : MonoBehaviour
         // 적용
         Editor.SetActive(false);
         EditorOpener.SetActive(true);
+        Tile.SetActive(false);
         isEditorMode = false;
         /*************************************/
     }
@@ -36,6 +43,7 @@ public class HouseEditor : MonoBehaviour
     {
         Editor.SetActive(false);
         EditorOpener.SetActive(true);
+        Tile.SetActive(false);
         isEditorMode = false;
 
         // 되돌리기
@@ -68,5 +76,10 @@ public class HouseEditor : MonoBehaviour
                 HouseObjectsPosition.Add(obj.GetInstanceID(), obj.transform.localPosition);
             }
         }
+    }
+
+    public void SlotClick(int i)
+    {
+        Instantiate(slotPrefab[i], new Vector2(5.0f, 0.0f), Quaternion.identity);             
     }
 }
