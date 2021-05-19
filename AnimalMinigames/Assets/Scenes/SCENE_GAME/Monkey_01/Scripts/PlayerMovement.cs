@@ -45,6 +45,8 @@ public class PlayerMovement : MonoBehaviour
             playerDamagedTime -= 1.0f * Time.deltaTime;
         }
 
+        modeTwoLines = (GroundMover.distance >= 1);
+
         if (modeTwoLines)
         {
             GetComponent<Transform>().transform.localPosition = new Vector3(gameObject.transform.localPosition.x, Mathf.Lerp(gameObject.transform.localPosition.y, modeTwoLines_groundY, 0.1f), gameObject.transform.localPosition.z);

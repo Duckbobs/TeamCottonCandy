@@ -3682,7 +3682,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topObject: {fileID: 2031790656}
   bottomObject: {fileID: 1781593701}
-  distance: 1
+  ct_distance: 1
 --- !u!1 &552081474
 GameObject:
   m_ObjectHideFlags: 0
@@ -9396,7 +9396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de78855919ba16146865e09d82711ede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floorSpeed: 6
+  floorSpeed: 5.75
   isLoop: 1
 --- !u!1 &1893316963
 GameObject:
