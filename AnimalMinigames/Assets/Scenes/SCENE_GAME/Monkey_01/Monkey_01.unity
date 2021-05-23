@@ -3560,8 +3560,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af482f27368bb6640b51af8411aa7210, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpSpeed: 40
-  gravity: 3
+  jumpSpeed: 25
+  gravity: 1.5
   groundY: -3.69
   vspeed: 0
   maxJump: 2
@@ -4096,7 +4096,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topObject: {fileID: 2031790656}
   bottomObject: {fileID: 1781593701}
-  ct_distance: -0.5
+  ct_distance: 0
 --- !u!1 &552081474
 GameObject:
   m_ObjectHideFlags: 0

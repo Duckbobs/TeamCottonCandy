@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
         if (playerBoostTime > 0)
         {
             playerBoostTime -= 1.0f * Time.deltaTime;
-            playerSpeed = 20;
+            playerSpeed = 5;
         }
         else
         {
