@@ -2,7 +2,6 @@
 [ExecuteInEditMode]
 public class _Obstacle : MonoBehaviour
 {
-    
     public void Update()
     {
         transform.localPosition = RoundVec3(transform.localPosition, 0.5f);
