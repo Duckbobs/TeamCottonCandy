@@ -14,8 +14,8 @@ public class GroundMover : MonoBehaviour
     {
         distance = ct_distance;
         if (topObject.transform.localPosition.y != distance)
-            topObject.transform.localPosition = new Vector3(0, Mathf.Lerp(topObject.transform.localPosition.y, distance, 0.05f), topObject.transform.localPosition.z);
+            topObject.transform.localPosition = new Vector3(0, Mathf.Lerp(topObject.transform.localPosition.y, distance, 0.01f), topObject.transform.localPosition.z);
         if (bottomObject.transform.localPosition.y != -distance)
-            bottomObject.transform.localPosition = new Vector3(0, Mathf.Lerp(bottomObject.transform.localPosition.y, -distance, 0.05f), bottomObject.transform.localPosition.z);
+            bottomObject.transform.localPosition = new Vector3(0, Mathf.Lerp(bottomObject.transform.localPosition.y, -distance, 0.01f), bottomObject.transform.localPosition.z);
     }
 }

@@ -6,11 +6,9 @@ TagManager:
   tags:
   - FloorManager
   - Floor
-  - Object
-  - HouseObject
-  - Event_End
   - Item
   - Obstacle
+  - Coin
   layers:
   - Default
   - TransparentFX

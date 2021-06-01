@@ -16,19 +16,24 @@ public class FloorMover : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Refresh();
+    }
+
+    public void Refresh()
+    {
         objects = new List<Transform>();
         Transform[] comps = GetComponentsInChildren<Transform>();
 
         foreach (Transform obj in comps)
         {
-            if (obj.tag == "Floor" || obj.tag == "Item" || obj.tag == "Obstacle")
+            if (obj.tag == "Floor" || obj.tag == "Item" || obj.tag == "Coin" || obj.tag == "Obstacle")
             {
-                obj.transform.localScale = new Vector2(obj.transform.localScale.x, obj.transform.localScale.y);
+                obj.transform.localScale = new Vector3(obj.transform.localScale.x, obj.transform.localScale.y, obj.transform.localScale.z);
                 objects.Add(obj);
 
-                if (obj.transform.localPosition.x + obj.GetComponent<SpriteRenderer>().sprite.rect.width/100 > floorWidth)
+                if (obj.transform.localPosition.x + obj.GetComponent<SpriteRenderer>().sprite.rect.width / 100 > floorWidth)
                 {
-                    floorWidth = obj.transform.localPosition.x + obj.GetComponent<SpriteRenderer>().sprite.rect.width/100;
+                    floorWidth = obj.transform.localPosition.x + obj.GetComponent<SpriteRenderer>().sprite.rect.width / 100;
                 }
                 if (obj.transform.localPosition.x < floorStartWidth)
                 {
@@ -45,12 +50,19 @@ public class FloorMover : MonoBehaviour
         move = (float)System.Math.Round((floorSpeed + PlayerMovement.playerSpeed) * delta, 7);
         foreach (Transform obj in objects)
         {
-            obj.transform.localPosition = new Vector2(obj.transform.localPosition.x - move, obj.transform.localPosition.y);
-            if (obj.transform.localPosition.x <= 0)
+            if (obj != null)
             {
-                if (isLoop)
+                obj.transform.localPosition = new Vector3(obj.transform.localPosition.x - move, obj.transform.localPosition.y, obj.transform.localPosition.z);
+                if (obj.transform.localPosition.x <= 0)
                 {
-                    obj.transform.localPosition = new Vector2(obj.transform.localPosition.x + floorWidth + floorStartWidth, obj.transform.localPosition.y);
+                    if (isLoop)
+                    {
+                        obj.transform.localPosition = new Vector3(obj.transform.localPosition.x + floorWidth + floorStartWidth, obj.transform.localPosition.y, obj.transform.localPosition.z);
+                    }
+                    else
+                    {
+                        Destroy(obj.gameObject);
+                    }
                 }
             }
         }

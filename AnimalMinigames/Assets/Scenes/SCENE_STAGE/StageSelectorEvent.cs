@@ -26,6 +26,16 @@ public class StageSelectorEvent : MonoBehaviour
         if (EventSystem.current.IsPointerOverGameObject())
             return;
 
-        StageSelectorPanel.Open(stage);
+        float isUnlock = Global.Get(stage.stageName);
+        switch (isUnlock)
+        {
+            case 0:
+                break;
+            case 1:
+                break;
+            case 2:
+                StageSelectorPanel.Open(stage);
+                break;
+        }
     }
 }

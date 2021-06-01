@@ -14,7 +14,7 @@ public class CollisionEvent : MonoBehaviour
         if (isPlayer)
         {
             switch (collision.tag) {
-                case "Object":
+                case "Coin":
                     // 획득 사운드 재생
                     audioSource.PlayOneShot(soundPoint);
                     GameSystem_Monkey_01.Score += Random.Range(100, 200);

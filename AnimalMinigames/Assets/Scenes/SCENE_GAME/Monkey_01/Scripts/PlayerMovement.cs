@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float jumpSpeed = 14f;
-    public float gravity = 1f;
-    public float groundY;
+    public float jumpSpeed = 25.0f;
+    public float gravity = 1.5f;
+    public float groundY = -3.69f;
     public float vspeed = 0;
-    public int maxJump = 1;
+    public int maxJump = 2;
     int isJump = 0;
 
 
@@ -45,7 +45,8 @@ public class PlayerMovement : MonoBehaviour
             playerDamagedTime -= 1.0f * Time.deltaTime;
         }
 
-        modeTwoLines = (GroundMover.distance >= 1);
+        if(isJump == 0)
+            modeTwoLines = (GroundMover.distance >= 1f);
 
         if (modeTwoLines)
         {
@@ -79,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (modeTwoLines_groundY == groundY)
             {
-                modeTwoLines_groundY = groundY - 2.0f;
+                modeTwoLines_groundY = groundY - 1.0f;
             }
             else
             {
