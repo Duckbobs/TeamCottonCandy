@@ -11,6 +11,8 @@ TagManager:
   - Event_End
   - Item
   - Obstacle
+  - HouseModify
+  - HouseApplied
   layers:
   - Default
   - TransparentFX
