@@ -13,9 +13,35 @@ public class GroundMover : MonoBehaviour
     void Update()
     {
         distance = ct_distance;
-        if (topObject.transform.localPosition.y != distance)
-            topObject.transform.localPosition = new Vector3(0, Mathf.Lerp(topObject.transform.localPosition.y, distance, 0.01f), topObject.transform.localPosition.z);
-        if (bottomObject.transform.localPosition.y != -distance)
-            bottomObject.transform.localPosition = new Vector3(0, Mathf.Lerp(bottomObject.transform.localPosition.y, -distance, 0.01f), bottomObject.transform.localPosition.z);
+
+        if(distance == 0)
+        {
+            float yPlus = Mathf.Lerp(topObject.transform.localPosition.y, -5, 0.1f);
+            topObject.transform.localPosition = new Vector3(
+                    0, yPlus, topObject.transform.localPosition.z
+                );
+            bottomObject.transform.localPosition = new Vector3(
+                    0, yPlus, bottomObject.transform.localPosition.z
+                );
+            transform.localPosition = new Vector3(
+                    0, yPlus, transform.localPosition.z
+                );
+        } else
+        {
+            if (topObject.transform.localPosition.y != distance)
+                topObject.transform.localPosition = new Vector3(
+                        0, Mathf.Lerp(topObject.transform.localPosition.y, distance, 0.1f), topObject.transform.localPosition.z
+                    );
+
+            if (bottomObject.transform.localPosition.y != -distance)
+                bottomObject.transform.localPosition = new Vector3(
+                        0, Mathf.Lerp(bottomObject.transform.localPosition.y, -distance, 0.1f), bottomObject.transform.localPosition.z
+                    );
+
+            float yPlus = Mathf.Lerp(transform.localPosition.y, 0.0f, 0.1f);
+            transform.localPosition = new Vector3(
+                    0, yPlus, transform.localPosition.z
+                );
+        }
     }
 }

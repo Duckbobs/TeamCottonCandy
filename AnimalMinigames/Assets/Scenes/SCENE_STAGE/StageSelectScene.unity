@@ -1200,6 +1200,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StageSelectorPanel: {fileID: 151930742}
+  Stars: []
+  Lock_active: []
+  Flat_active: []
   stage:
     mainSprite: {fileID: 21300000, guid: 7e50c0a1d4c46be46b11df97250df92b, type: 3}
     stageName: GameScene_001
@@ -2049,13 +2052,13 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2c5acc73982744bcd8d844052279732d,
+      objectReference: {fileID: 21300000, guid: 6e829032a15e0594d8feaaba2b09bce4,
         type: 3}
     - target: {fileID: 4557419702057078274, guid: 905fb0bafbb2342d39a26e7ff25b5be5,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d29ef917dac28bd4cbd1f908c007c0ed,
+      objectReference: {fileID: 21300000, guid: 13f73bdee2cff704282a07ffa1e8241c,
         type: 3}
     - target: {fileID: 7022390768057508883, guid: 905fb0bafbb2342d39a26e7ff25b5be5,
         type: 3}
@@ -2413,13 +2416,13 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ec1f8b7810c906e468647816d4ad3757,
+      objectReference: {fileID: 21300000, guid: 6dfa538d69ad10f4ebb0d986eff74217,
         type: 3}
     - target: {fileID: 393711653769527276, guid: 905fb0bafbb2342d39a26e7ff25b5be5,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ec1f8b7810c906e468647816d4ad3757,
+      objectReference: {fileID: 21300000, guid: 6dfa538d69ad10f4ebb0d986eff74217,
         type: 3}
     - target: {fileID: 393711654483971808, guid: 905fb0bafbb2342d39a26e7ff25b5be5,
         type: 3}
@@ -2489,7 +2492,7 @@ PrefabInstance:
     - target: {fileID: 2014011281541166848, guid: 905fb0bafbb2342d39a26e7ff25b5be5,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2476420796655265958, guid: 905fb0bafbb2342d39a26e7ff25b5be5,
         type: 3}
@@ -2510,13 +2513,13 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2c5acc73982744bcd8d844052279732d,
+      objectReference: {fileID: 21300000, guid: 6e829032a15e0594d8feaaba2b09bce4,
         type: 3}
     - target: {fileID: 4557419702057078274, guid: 905fb0bafbb2342d39a26e7ff25b5be5,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d29ef917dac28bd4cbd1f908c007c0ed,
+      objectReference: {fileID: 21300000, guid: 13f73bdee2cff704282a07ffa1e8241c,
         type: 3}
     - target: {fileID: 7022390768057508883, guid: 905fb0bafbb2342d39a26e7ff25b5be5,
         type: 3}
@@ -2870,6 +2873,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StageSelectorPanel: {fileID: 151930742}
+  Stars: []
+  Lock_active: []
+  Flat_active: []
   stage:
     mainSprite: {fileID: 21300000, guid: 8b63c444c6ab32e4e81590242926a968, type: 3}
     stageName: GameScene_001
@@ -4664,6 +4670,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StageSelectorPanel: {fileID: 151930742}
+  Stars: []
+  Lock_active: []
+  Flat_active: []
   stage:
     mainSprite: {fileID: 21300000, guid: 7e50c0a1d4c46be46b11df97250df92b, type: 3}
     stageName: Test
@@ -7556,19 +7565,19 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ec1f8b7810c906e468647816d4ad3757,
+      objectReference: {fileID: 21300000, guid: 6dfa538d69ad10f4ebb0d986eff74217,
         type: 3}
     - target: {fileID: 393711653769527276, guid: 905fb0bafbb2342d39a26e7ff25b5be5,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ec1f8b7810c906e468647816d4ad3757,
+      objectReference: {fileID: 21300000, guid: 6dfa538d69ad10f4ebb0d986eff74217,
         type: 3}
     - target: {fileID: 393711654039993340, guid: 905fb0bafbb2342d39a26e7ff25b5be5,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ec1f8b7810c906e468647816d4ad3757,
+      objectReference: {fileID: 21300000, guid: 6dfa538d69ad10f4ebb0d986eff74217,
         type: 3}
     - target: {fileID: 393711654483971808, guid: 905fb0bafbb2342d39a26e7ff25b5be5,
         type: 3}
@@ -7638,25 +7647,35 @@ PrefabInstance:
     - target: {fileID: 2014011281541166848, guid: 905fb0bafbb2342d39a26e7ff25b5be5,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2348447859383537227, guid: 905fb0bafbb2342d39a26e7ff25b5be5,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2476420796655265958, guid: 905fb0bafbb2342d39a26e7ff25b5be5,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2c5acc73982744bcd8d844052279732d,
+      objectReference: {fileID: 21300000, guid: 6e829032a15e0594d8feaaba2b09bce4,
         type: 3}
     - target: {fileID: 4557419702057078274, guid: 905fb0bafbb2342d39a26e7ff25b5be5,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d29ef917dac28bd4cbd1f908c007c0ed,
+      objectReference: {fileID: 21300000, guid: 13f73bdee2cff704282a07ffa1e8241c,
         type: 3}
     - target: {fileID: 7022390768057508883, guid: 905fb0bafbb2342d39a26e7ff25b5be5,
         type: 3}
       propertyPath: StageSelectorPanel
       value: 
       objectReference: {fileID: 151930742}
+    - target: {fileID: 7022390768057508883, guid: 905fb0bafbb2342d39a26e7ff25b5be5,
+        type: 3}
+      propertyPath: stage.stageName
+      value: stage1-1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 905fb0bafbb2342d39a26e7ff25b5be5, type: 3}
 --- !u!114 &823416864346646788

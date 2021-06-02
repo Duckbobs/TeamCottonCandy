@@ -6,6 +6,7 @@ public static class GlobalValues
 {
     public static void init()
     {
-        Global.Set("mineral", 0);
+        Global.Set("stage1-1:nowStar", 0);
+        Global.Set("stage1-1:isUnlock", 1);
     }
 }

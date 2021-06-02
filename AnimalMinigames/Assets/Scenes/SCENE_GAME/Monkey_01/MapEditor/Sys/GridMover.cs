@@ -13,9 +13,11 @@ public class GridMover : MonoBehaviour
             {
                 if (obj.gameObject != this.gameObject)
                 {
-                    obj.transform.localPosition = RoundVec3(obj.transform.localPosition, 0.5f);
                     if(obj.tag != "Untagged")
+                    {
+                        obj.transform.localPosition = RoundVec3(obj.transform.localPosition, 0.5f);
                         obj.name = obj.tag + "_" + obj.transform.localPosition.x * 2f;
+                    }
                 }
             }
         }

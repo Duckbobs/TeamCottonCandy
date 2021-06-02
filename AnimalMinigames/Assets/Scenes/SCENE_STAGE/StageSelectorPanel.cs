@@ -22,6 +22,7 @@ public class StageSelectorPanel : MonoBehaviour
 
     public void StartStage()
     {
-        SceneChanger.Load_Async(OpenStage.stageName);
+        Debug.Log("Monkey_01");
+        SceneChanger.Load_Async("Monkey_01");
     }
 }
