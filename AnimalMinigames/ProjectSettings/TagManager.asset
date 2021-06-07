@@ -10,6 +10,8 @@ TagManager:
   - Obstacle
   - Coin
   - TotemFloor
+  - HouseModify
+  - HouseApplied
   layers:
   - Default
   - TransparentFX
