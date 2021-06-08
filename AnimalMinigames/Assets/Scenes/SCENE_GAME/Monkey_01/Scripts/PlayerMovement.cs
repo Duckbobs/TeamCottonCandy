@@ -6,7 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     public float jumpSpeed = 25.0f;
     public float gravity = 1.5f;
-    public float groundY = -3.69f;
+    public float _groundY = -0.73f;
+    float groundY;
     public float vspeed = 0;
     public int maxJump = 2;
     int isJump = 0;
@@ -15,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     public static float playerBoostTime = 0;
     public static float playerSpeed = 0;
     public static float playerDamagedTime = 0;
+    public static float totemY = 0;
+    public static float totemYtime = 0;
 
     public bool modeTwoLines = false;
     float modeTwoLines_groundY = 0;
@@ -24,12 +27,22 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        groundY = _groundY;
         modeTwoLines_groundY = groundY;
     }
 
     // Update is called once per frame
     void Update()
     {
+        groundY = _groundY;
+        if (totemYtime > 0)
+        {
+            totemYtime -= 1.0f * Time.deltaTime;
+            totemYtime = 0;
+            groundY = 4.68f;//totemY - GetComponentInParent<Transform>().position.y - _groundY;
+        }
+
+
         if (playerBoostTime > 0)
         {
             playerBoostTime -= 1.0f * Time.deltaTime;

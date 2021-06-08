@@ -32,4 +32,20 @@ public class CollisionEvent : MonoBehaviour
             }
         }
     }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (isPlayer)
+        {
+            switch (collision.tag)
+            {
+                case "TotemFloor":
+                    PlayerMovement.totemY = collision.transform.position.y;
+                    PlayerMovement.totemYtime = 1.0f;
+
+                    Debug.Log(PlayerMovement.totemY);
+                    break;
+            }
+        }
+    }
 }
