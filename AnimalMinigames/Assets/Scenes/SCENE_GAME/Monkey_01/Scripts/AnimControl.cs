@@ -36,10 +36,19 @@ public class AnimControl : MonoBehaviour
         else if(compVspeed.vspeed > 0)
             state = "MONKEY_JUMP";
 
+
+        // 게임 정지
+        if (FloorMover.isGameStop)
+        {
+            state = "MONKEY__IDLE";
+            skeleton.timeScale = 2;
+        }
+
+
         if (beforeState != state)
         {
             beforeState = state;
-            skeleton.state.SetAnimation(0, state, (state == "MONKEY__RUN" || state == "MONKEY__SPEEDRUN"));
+            skeleton.state.SetAnimation(0, state, (state == "MONKEY__IDLE" || state == "MONKEY__RUN" || state == "MONKEY__SPEEDRUN"));
         }
     }
 }

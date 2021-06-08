@@ -13,6 +13,9 @@ public class FloorMover : MonoBehaviour
     Transform rightObject = null;
     Transform destroyObject = null;
     float delta, move, maxRight;
+
+    public static bool isGameStop = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +29,7 @@ public class FloorMover : MonoBehaviour
 
         foreach (Transform obj in comps)
         {
-            if (obj.tag == "Floor" || obj.tag == "Item" || obj.tag == "Coin" || obj.tag == "Obstacle")
+            if (obj.tag == "Floor" || obj.tag == "Item" || obj.tag == "Coin" || obj.tag == "Obstacle" || obj.tag == "Npc")
             {
                 obj.transform.localScale = new Vector3(obj.transform.localScale.x, obj.transform.localScale.y, obj.transform.localScale.z);
                 objects.Add(obj);
@@ -46,6 +49,8 @@ public class FloorMover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (FloorMover.isGameStop) return;
+
         delta = Mathf.Min((float)System.Math.Round(Time.deltaTime, 7), 0.02f);
         move = (float)System.Math.Round((floorSpeed + PlayerMovement.playerSpeed) * delta, 7);
         foreach (Transform obj in objects)

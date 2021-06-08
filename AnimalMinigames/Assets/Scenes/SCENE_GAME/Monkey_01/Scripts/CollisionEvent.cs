@@ -9,6 +9,8 @@ public class CollisionEvent : MonoBehaviour
     public AudioSource audioSource;
     public bool isPlayer = false;
     public Text textUI;
+
+    public GameObject talkOrder;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (isPlayer)
@@ -28,6 +30,10 @@ public class CollisionEvent : MonoBehaviour
                 case "Obstacle":
                     PlayerMovement.playerDamagedTime = 0.3f;
                     collision.gameObject.SetActive(false);
+                    break;
+                case "Npc":
+                    FloorMover.isGameStop = true;
+                    talkOrder.SetActive(true);
                     break;
             }
         }

@@ -16,7 +16,7 @@ public class GroundMover : MonoBehaviour
 
         if(distance == 0)
         {
-            float yPlus = Mathf.Lerp(topObject.transform.localPosition.y, -5, 0.1f);
+            float yPlus = Mathf.Lerp(topObject.transform.localPosition.y, -3, 0.1f);
             topObject.transform.localPosition = new Vector3(
                     0, yPlus, topObject.transform.localPosition.z
                 );

@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
         {
             totemYtime -= 1.0f * Time.deltaTime;
             totemYtime = 0;
-            groundY = 4.68f;//totemY - GetComponentInParent<Transform>().position.y - _groundY;
+            groundY = 3.12f;//totemY - GetComponentInParent<Transform>().position.y - _groundY;
         }
 
 
@@ -88,6 +88,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void doJump()
     {
+        if (FloorMover.isGameStop) return;
 
         if (modeTwoLines)
         {
@@ -113,6 +114,8 @@ public class PlayerMovement : MonoBehaviour
     }
     public bool doJump_isJump()
     {
+        if (FloorMover.isGameStop) return false;
+
         if (isJump < maxJump)
         {
             vspeed = jumpSpeed;
@@ -125,6 +128,8 @@ public class PlayerMovement : MonoBehaviour
     }
     public void doUp()
     {
+        if (FloorMover.isGameStop) return;
+
         vspeed = jumpSpeed;
     }
 

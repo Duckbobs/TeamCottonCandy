@@ -12,6 +12,8 @@ TagManager:
   - TotemFloor
   - HouseModify
   - HouseApplied
+  - Object
+  - Npc
   layers:
   - Default
   - TransparentFX
