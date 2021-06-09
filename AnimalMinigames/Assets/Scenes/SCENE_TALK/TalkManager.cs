@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class TalkManager : MonoBehaviour
+public class TalkManager : MonoBehaviour, IPointerClickHandler
 {
     public Text compText;
     public UI_AppearAnimation compAppearAnimation;
@@ -33,13 +34,17 @@ public class TalkManager : MonoBehaviour
         }
     }
 
-    private void OnMouseUpAsButton()
+    public void OnPointerClick(PointerEventData eventData)
     {
+        Debug.Log("Clicked: " + eventData.pointerCurrentRaycast.gameObject.name);
         if (compAppearAnimation.isEnd)
         {
             nowText = "";
             compText.text = nowText;
             SoundManager.ui.PlayTouchSound();
         }
+    }
+    private void OnMouseUpAsButton()
+    {
     }
 }

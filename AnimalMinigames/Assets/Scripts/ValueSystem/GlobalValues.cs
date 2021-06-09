@@ -9,6 +9,7 @@ public static class GlobalValues
         Global.Set("stage1-1_nowStar", 0);
         Global.Set("stage1-1_isUnlock", 1);
 
+        Global.Set("Tuto_0", 0);
         Global.Set("Tuto_1", 0);
     }
 }

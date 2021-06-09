@@ -36,7 +36,7 @@ public class SometimeBounce : MonoBehaviour
         {
             if (!appearAnimation.isEnd)
             {
-                Debug.Log(appearAnimation);
+                //Debug.Log(appearAnimation);
                 t = Time.time;
                 return;
             }
