@@ -7645,6 +7645,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Talk_\uC871\uC7A5\uACFC \uCCAB \uB9CC\uB0A8"
       objectReference: {fileID: 0}
+    - target: {fileID: 8082952702106992356, guid: 36ce94e04a91b429b91e61455820a4f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36ce94e04a91b429b91e61455820a4f9, type: 3}
 --- !u!114 &8470415718937715921

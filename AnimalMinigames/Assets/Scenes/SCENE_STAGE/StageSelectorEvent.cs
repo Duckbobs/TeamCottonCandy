@@ -22,7 +22,7 @@ public class StageSelectorEvent : MonoBehaviour
     private void Awake()
     {
         StageSelectorPanel.Close();
-        float nowStar = Global.Get(stage.stageName + ":nowStar");
+        float nowStar = Global.Get(stage.stageName + "_nowStar");
         switch ((int)nowStar)
         {
             case 0:
@@ -42,7 +42,7 @@ public class StageSelectorEvent : MonoBehaviour
                 break;
         }
 
-        float isUnlock = Global.Get(stage.stageName + ":isUnlock");
+        float isUnlock = Global.Get(stage.stageName + "_isUnlock");
         switch ((int)isUnlock)
         {
             case 1:
@@ -59,7 +59,7 @@ public class StageSelectorEvent : MonoBehaviour
         if (EventSystem.current.IsPointerOverGameObject())
             return;
 
-        float isUnlock = Global.Get(stage.stageName + ":isUnlock");
+        float isUnlock = Global.Get(stage.stageName + "_isUnlock");
         switch ((int)isUnlock)
         {
             case 0:
@@ -69,7 +69,7 @@ public class StageSelectorEvent : MonoBehaviour
                 Debug.Log("Unlock");
                 Lock_active[0].SetActive(false);
                 Lock_active[1].SetActive(false);
-                Global.Set(stage.stageName + ":isUnlock", 2);
+                Global.Set(stage.stageName + "_isUnlock", 2);
                 break;
             case 2:
                 Debug.Log("Open");

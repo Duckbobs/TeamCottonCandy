@@ -11,6 +11,10 @@ public class MapManager : MonoBehaviour
     private int index = 0;
     Transform[] transforms;
 
+    public void ReIndex()
+    {
+        index = 0;
+    }
     private void NextMap()
     {
         if(mapList.Length > index)

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TalkOrder : MonoBehaviour
 {
+    public bool canDestroy = true;
     TalkManager[] objects;
     // Start is called before the first frame update
     void Start()
@@ -32,7 +33,17 @@ public class TalkOrder : MonoBehaviour
         if(exist == false)
         {
             FloorMover.isGameStop = false;
-            Destroy(gameObject);
+            //if (canDestroy)
+            //{
+                Destroy(gameObject);
+            //}
+            //else
+            //{
+            //    foreach (var item in objects)
+            //    {
+            //        item.gameObject.SetActive(false);
+            //    }
+            //}
         }
     }
 }
