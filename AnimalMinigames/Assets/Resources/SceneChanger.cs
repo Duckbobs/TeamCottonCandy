@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class SceneChanger : MonoBehaviour
 {
+    public ScaleToZero scaleToZero;
     [SerializeField]
     private Image ProgressBar;
 
@@ -34,7 +35,10 @@ public class SceneChanger : MonoBehaviour
             {
                 ProgressBar.fillAmount = Mathf.Lerp(ProgressBar.fillAmount, 1.0f, timer);
                 if (ProgressBar.fillAmount == 1.0f)
+                {
                     ao.allowSceneActivation = true;
+                    scaleToZero.reverse = true;
+                }
             }
         }
     }

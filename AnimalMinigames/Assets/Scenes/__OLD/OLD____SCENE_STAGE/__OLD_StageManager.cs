@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class StageManager : MonoBehaviour
+public class __OLD_StageManager : MonoBehaviour
 {
     // stageIndex 값을 변경하면 보고있는 스테이지가 바뀝니다!
     public int stageIndex = 0;

@@ -7,6 +7,13 @@ public class SceneChangeButton : MonoBehaviour
     public bool isScreenArea;
     public string sceneName;
 
+    public void SceneChange_Sync()
+    {
+        if (!isScreenArea)
+        {
+            SceneChanger.Load(sceneName);
+        }
+    }
     public void SceneChange()
     {
         if (!isScreenArea)
