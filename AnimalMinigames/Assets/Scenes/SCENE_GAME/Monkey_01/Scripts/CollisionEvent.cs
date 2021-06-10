@@ -9,11 +9,6 @@ public class CollisionEvent : MonoBehaviour
     public AudioSource audioSource;
     public bool isPlayer = false;
     public Text textUI;
-
-    public GameObject talkOrder_Tuto1;
-    public GameObject talkOrder_Tuto2;
-    public GameObject talkOrder_Npc;
-    private bool isTuto1 = false;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (isPlayer)
@@ -31,17 +26,26 @@ public class CollisionEvent : MonoBehaviour
                     collision.gameObject.SetActive(false);
                     break;
                 case "Obstacle":
-                    if (isTuto1)
-                    {
-                        FloorMover.isGameStop = true;
-                        talkOrder_Tuto2.SetActive(true);
-                    }
                     PlayerMovement.playerDamagedTime = 0.3f;
                     collision.gameObject.SetActive(false);
                     break;
-                case "Npc":
-                    FloorMover.isGameStop = true;
-                    talkOrder_Npc.SetActive(true);
+                case "Trigger":
+                    Transform[] collection = TriggerObject.tutoParent.GetComponentsInChildren<Transform>(true);
+                    foreach (Transform item in collection)
+                    {
+                        if (item.gameObject.name == collision.gameObject.GetComponent<TriggerObject>().destroyTtargetName)
+                        {
+                            item.gameObject.SetActive(false);
+                        }
+                        if (item.gameObject.name == collision.gameObject.GetComponent<TriggerObject>().targetName)
+                        {
+                            if(item.gameObject.GetComponent<TalkOrder>() != null)
+                                FloorMover.isGameStop = true;
+                            item.gameObject.SetActive(true);
+                            Destroy(collision.gameObject);
+                            break;
+                        }
+                    }
                     break;
             }
         }
@@ -65,14 +69,5 @@ public class CollisionEvent : MonoBehaviour
 
     private void Start()
     {
-        if (Global.Get("Tuto_1") == 0)
-        {
-            isTuto1 = true;
-
-            FloorMover.isGameStop = true;
-            talkOrder_Tuto1.SetActive(true);
-
-            Global.Set("Tuto_1", 1);
-        }
     }
 }

@@ -270,9 +270,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0f5c91b4cb161a45b350906ed8daaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageIndex: 0
-  txtMapName: {fileID: 0}
-  Stages: []
 --- !u!1 &1410900619069193156
 GameObject:
   m_ObjectHideFlags: 0

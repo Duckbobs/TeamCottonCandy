@@ -5,7 +5,7 @@ using UnityEngine;
 public class DontDestroyObject : MonoBehaviour
 {
     public GameObject[] gameObjects;
-    private void Start()
+    void OnEnable()
     {
         foreach (GameObject obj in gameObjects)
         {

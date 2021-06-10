@@ -10,11 +10,13 @@ public class SometimeBounce : MonoBehaviour
     bool isEnd = false;
     UI_AppearAnimation appearAnimation = null;
 
-    float value = 0.2f;
+    public float strong = 0.2f;
+    float value;
     float t = 0;
     // Start is called before the first frame update
     void Start()
     {
+        value = strong;
         Reset();
     }
 
@@ -28,7 +30,7 @@ public class SometimeBounce : MonoBehaviour
             {
                 _someTime = 0;
                 isEnd = false;
-                value = 0.2f;
+                value = strong;
                 t = 0;
             }
         }
@@ -63,7 +65,7 @@ public class SometimeBounce : MonoBehaviour
         xScale = 1;
         yScale = 1;
         isEnd = false;
-        value = 0.2f;
+        value = strong;
         t = 0;
         appearAnimation = gameObject.GetComponent<UI_AppearAnimation>();
     }

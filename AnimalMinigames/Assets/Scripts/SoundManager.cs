@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public static SoundManager ui;
+    public static SoundManager ui = null;
     public AudioSource audio;
-    public AudioClip clip;
+    public AudioClip clipTouch;
+    public AudioClip clipPop;
 
     public void Start()
     {
@@ -14,6 +15,11 @@ public class SoundManager : MonoBehaviour
     }
     public void PlayTouchSound()
     {
-        audio.PlayOneShot(clip);
+        Debug.Log("PlayTouchSound");
+        audio.PlayOneShot(clipTouch);
+    }
+    public void PlayPopSound()
+    {
+        audio.PlayOneShot(clipPop);
     }
 }

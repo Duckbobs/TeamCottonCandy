@@ -35,6 +35,6 @@ public class SetVisibleSceneName : MonoBehaviour
 
     void OnDisable()
     {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
+        //SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }
