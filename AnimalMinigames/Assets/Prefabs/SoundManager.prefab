@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3285510094018000152}
+  - component: {fileID: 675255787203889185}
   - component: {fileID: 3285510094018000158}
-  - component: {fileID: 3285510094018000159}
   - component: {fileID: 1488460886}
   m_Layer: 5
   m_Name: SoundManager
@@ -38,22 +38,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &3285510094018000158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3285510094018000153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8ef1ea6c2959a640a96f785cbdc0ecb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audio: {fileID: 3285510094018000159}
-  clipTouch: {fileID: 8300000, guid: cddb0618156c02644ac89890fb503150, type: 3}
-  clipPop: {fileID: 8300000, guid: 9af8aebe447c2d5439c926a02300dbc2, type: 3}
---- !u!82 &3285510094018000159
+--- !u!82 &675255787203889185
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,14 +49,14 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_PlayOnAwake: 1
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 100
+  Priority: 128
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -149,6 +134,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3285510094018000158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3285510094018000153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8ef1ea6c2959a640a96f785cbdc0ecb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clipTouch: {fileID: 8300000, guid: cddb0618156c02644ac89890fb503150, type: 3}
+  clipPop: {fileID: 8300000, guid: 9af8aebe447c2d5439c926a02300dbc2, type: 3}
 --- !u!114 &1488460886
 MonoBehaviour:
   m_ObjectHideFlags: 0

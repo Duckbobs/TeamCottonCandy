@@ -17,10 +17,6 @@ public class StageActiver : MonoBehaviour
             MapManager[] stages = GetComponentsInChildren<MapManager>(true);
             foreach (MapManager item in stages)
             {
-                item.gameObject.SetActive(true);
-            }
-            foreach (MapManager item in stages)
-            {
                 if (StageManager.stageName == item.gameObject.name)
                 {
                     item.gameObject.SetActive(true);

@@ -40,6 +40,7 @@ public class MapManager : MonoBehaviour
         {
             isGameEnd = true;
             gameEndObject.SetActive(true);
+            Global.Add("Stage", 1);
             Debug.Log("GameEnd!");
         }
     }

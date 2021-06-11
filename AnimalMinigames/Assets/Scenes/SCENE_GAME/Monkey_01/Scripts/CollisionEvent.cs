@@ -16,8 +16,9 @@ public class CollisionEvent : MonoBehaviour
             switch (collision.tag) {
                 case "Coin":
                     // 획득 사운드 재생
+                    Global.Add("Banana_001", 1);
                     audioSource.PlayOneShot(soundPoint);
-                    GameSystem_Monkey_01.Score += Random.Range(100, 200);
+                    GameSystem_Monkey_01.Score += 1;//Random.Range(100, 200);
                     textUI.text = StringUtil.NumberFormat(GameSystem_Monkey_01.Score);
                     collision.gameObject.SetActive(false);
                     break;

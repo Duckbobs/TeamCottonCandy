@@ -452,10 +452,11 @@ MonoBehaviour:
   compSometimeBounce: {fileID: 1233911250596504342}
   focusObject: {fileID: 0}
   startDestroyObject: {fileID: 0}
+  endFocusObject: {fileID: 0}
   textArray:
   - "\uC548\uB155\uD558\uC138\uC694! \uC5D8\uB9AC\uD2B8 \uACE0\uBBFC \uD574\uACB0\uC0AC
     \uC6B0\uB07C\uB9AC\uC785\uB2C8\uB2E4."
-  - "\uC758\uB8B0\uC778 \uC871\uC7A5\uD560\uC544\uC22D\uC774\uB2D8 \uB9DE\uC73C\uC2E0\uAC00\uC694?"
+  - "\uC758\uB8B0\uC778 \uC871\uC7A5 \uD560\uC544\uC22D\uC774\uB2D8 \uB9DE\uC73C\uC2E0\uAC00\uC694?"
 --- !u!1 &1233911251151488139
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,7 +473,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1233911251151488140
 RectTransform:
   m_ObjectHideFlags: 0
@@ -630,6 +631,7 @@ MonoBehaviour:
   compSometimeBounce: {fileID: 3197438992875419291}
   focusObject: {fileID: 0}
   startDestroyObject: {fileID: 0}
+  endFocusObject: {fileID: 0}
   textArray:
   - "\uADF8\uB7FC... \uBC14\uB098\uB098 100\uAC1C \uBA3C\uC800 \uAD6C\uD574\uC8FC\uC29D..."
 --- !u!1 &3197438991871159657
@@ -921,6 +923,7 @@ MonoBehaviour:
   compSometimeBounce: {fileID: 3197438993711493008}
   focusObject: {fileID: 0}
   startDestroyObject: {fileID: 0}
+  endFocusObject: {fileID: 0}
   textArray:
   - "\uBB34\uC2A8 \uC77C\uB85C \uC800\uC5D0\uAC8C \uC758\uB8B0\uB97C \uD558\uC168\uB098\uC694?"
 --- !u!1 &3197438992020744824
@@ -2235,6 +2238,7 @@ MonoBehaviour:
   compSometimeBounce: {fileID: 3197438993194301010}
   focusObject: {fileID: 0}
   startDestroyObject: {fileID: 0}
+  endFocusObject: {fileID: 0}
   textArray:
   - "\uBC18\uAC11\uC29D! \uC798 \uCC3E\uC544\uC624\uC168\uC29D"
 --- !u!1 &3197438992920887494
@@ -2669,6 +2673,7 @@ MonoBehaviour:
   compSometimeBounce: {fileID: 3197438992532045076}
   focusObject: {fileID: 0}
   startDestroyObject: {fileID: 0}
+  endFocusObject: {fileID: 0}
   textArray:
   - "\uC774\uB7F0 \uC77C\uC740 \uC81C \uC804\uBB38\uC785\uB2C8\uB2E4!! \uB9E1\uACA8\uB9CC
     \uC8FC\uC138\uC694!"
@@ -3726,6 +3731,7 @@ MonoBehaviour:
   compSometimeBounce: {fileID: 3197438992479618899}
   focusObject: {fileID: 0}
   startDestroyObject: {fileID: 0}
+  endFocusObject: {fileID: 0}
   textArray:
   - "\uC6B0\uB9AC \uB098\uB098\uBC14 \uB9C8\uC744\uC5D0 \uC804\uC5FC\uBCD1\uC774
     \uB3CC\uC558\uC29D..\uB0B4\uAC00 \uC57D\uC744 \uB9CC\uB4E4 \uC218 \uC788\uC29D.."

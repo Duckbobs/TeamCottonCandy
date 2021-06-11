@@ -7,7 +7,7 @@ public class SometimeBounce : MonoBehaviour
     public float someTime = 0;
     float _someTime = 0;
     float xScale, yScale;
-    bool isEnd = false;
+    public bool isEnd = false;
     UI_AppearAnimation appearAnimation = null;
 
     public float strong = 0.2f;

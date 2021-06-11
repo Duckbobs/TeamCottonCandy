@@ -8,6 +8,11 @@ public class SceneChangeButton : MonoBehaviour
     public string sceneName;
     bool progress = false;
 
+    public void SceneChange(string sceneName)
+    {
+        SceneChanger.Load_Async(sceneName);
+        progress = true;
+    }
     public void SceneChange_Sync()
     {
         if (!isScreenArea && !progress)
