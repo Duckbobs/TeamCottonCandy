@@ -16,6 +16,9 @@ TagManager:
   - Npc
   - HouseObject
   - Trigger
+  - GoldPosition
+  - Banana_001
+  - Gold
   layers:
   - Default
   - TransparentFX

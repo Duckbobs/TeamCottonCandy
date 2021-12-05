@@ -11,7 +11,7 @@ public class Hspeed : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         GetComponent<Transform>().transform.position = new Vector3(
             gameObject.transform.position.x + (hspeed - PlayerMovement.playerSpeed) * Time.deltaTime, gameObject.transform.position.y, gameObject.transform.position.z);

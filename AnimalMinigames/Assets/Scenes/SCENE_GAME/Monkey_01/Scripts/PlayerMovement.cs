@@ -32,8 +32,11 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        if (GamePause.isPause) { return; }
+
+
         groundY = _groundY;
         if (totemYtime > 0)
         {
@@ -63,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (modeTwoLines)
         {
-            GetComponent<Transform>().transform.localPosition = new Vector3(gameObject.transform.localPosition.x, Mathf.Lerp(gameObject.transform.localPosition.y, modeTwoLines_groundY, 0.1f), gameObject.transform.localPosition.z);
+            GetComponent<Transform>().transform.localPosition = new Vector3(gameObject.transform.localPosition.x, Mathf.Lerp(gameObject.transform.localPosition.y, modeTwoLines_groundY, 0.3f), gameObject.transform.localPosition.z);
             vspeed = 0;
         }
         else

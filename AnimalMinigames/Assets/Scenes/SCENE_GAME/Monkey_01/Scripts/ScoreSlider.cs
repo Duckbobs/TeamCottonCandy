@@ -9,13 +9,22 @@ public class ScoreSlider : MonoBehaviour
     public Text compText;
     public Slider compSlider;
 
+    public bool isPercent = true;
+
     public void Refresh()
     {
         compSlider.maxValue = Global.Get(globalName, "Max");
         compSlider.value = Global.Get(globalName);
-        compText.text = compSlider.value.ToString() + "/" + compSlider.maxValue;
+        if (isPercent)
+        {
+            compText.text = (int)(compSlider.value / compSlider.maxValue * 100) + "%";
+        }
+        else
+        {
+            compText.text = Global.Get(globalName).ToString() + "/" + Global.Get(globalName, "Max").ToString();
+        }
     }
-    private void Update()
+    private void FixedUpdate()
     {
         Refresh();
     }

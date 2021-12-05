@@ -10,8 +10,11 @@ public class GroundMover : MonoBehaviour
     public static float distance = 1;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        if (GamePause.isPause) { return; }
+
+
         distance = ct_distance;
 
         if(distance == 0)

@@ -29,7 +29,7 @@ public class FloorMover : MonoBehaviour
 
         foreach (Transform obj in comps)
         {
-            if (obj.tag == "Floor" || obj.tag == "Item" || obj.tag == "Coin" || obj.tag == "Obstacle" || obj.tag == "Trigger")
+            if (obj.tag == "Floor" || obj.tag == "Item" || obj.tag == "Banana_001" || obj.tag == "Gold" || obj.tag == "Obstacle" || obj.tag == "Trigger")
             {
                 obj.transform.localScale = new Vector3(obj.transform.localScale.x, obj.transform.localScale.y, obj.transform.localScale.z);
                 objects.Add(obj);
@@ -47,8 +47,9 @@ public class FloorMover : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        if (GamePause.isPause) { return; }
         if (FloorMover.isGameStop) return;
 
         delta = Mathf.Min((float)System.Math.Round(Time.deltaTime, 7), 0.02f);

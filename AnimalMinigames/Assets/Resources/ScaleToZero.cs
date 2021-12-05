@@ -13,14 +13,14 @@ public class ScaleToZero : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (reverse)
         {
             blackObj.SetActive(false);
             if (transform.localScale.x < 13.0f)
             {
-                transform.localScale *= 1.05f;
+                transform.localScale *= 1.1f;
             }
             else
             {
@@ -31,7 +31,7 @@ public class ScaleToZero : MonoBehaviour
         {
             if (transform.localScale.x > 0.2f)
             {
-                transform.localScale *= 0.95f;
+                transform.localScale *= 0.9f;
             }
             else
             {

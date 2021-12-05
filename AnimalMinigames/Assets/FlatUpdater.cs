@@ -10,17 +10,20 @@ public class FlatUpdater : MonoBehaviour
     public int num;
     public GameObject TutoObject;
     public GameObject EndTutoObject;
-    public GameObject Unlocked_Objects;
-    public GameObject Locked_Objects;
-    public GameObject Wait_Objects;
-    public GameObject AllClear_Objects;
+    public GameObject Unlocked_Object;
+    public GameObject Locked_Object;
+    public GameObject Wait_Object;
+    public GameObject AllClear_Object;
+    public GameObject NotRewarded_Object;
 
     public string valueName;
     public static int refreshAll = 0;
 
+    public GameObject RewardObject;
+
     private void OnMouseUpAsButton()
     {
-        if (Unlocked_Objects.activeSelf == true)
+        if (Unlocked_Object.activeSelf == true)
         {
             // 퀘스트 아직 안 받았을 경우
             Global.Set(stageName + num.ToString(), "isWait", Global.TRUE);
@@ -28,15 +31,23 @@ public class FlatUpdater : MonoBehaviour
                 TutoObject.SetActive(true);
             Refresh();
         }
-        else if(Wait_Objects.activeSelf == true)
+        else if(Wait_Object.activeSelf == true)
         {
             if (Global.Get(valueName) >= Global.Get(valueName, "Max"))
             {
+                // 보상수령
                 Global.Add(valueName, -Global.Get(valueName, "Max"));
                 Global.Set(stageName + num.ToString(), "isRewarded", Global.TRUE);
                 refreshAll = 10;
                 if (EndTutoObject != null)
                     EndTutoObject.SetActive(true);
+
+                // 코인 효과
+                for (int i = 0; i < 10; i++)
+                {
+                    GameObject obj = Instantiate(RewardObject);
+                    obj.transform.position = new Vector3(transform.position.x, transform.position.y, obj.transform.position.z);
+                }
             }
         }
     }
@@ -49,10 +60,11 @@ public class FlatUpdater : MonoBehaviour
         if (num > 1 && Global.Get(stageName + (num - 1).ToString(), "isRewarded") == Global.FALSE)
         {
             // 이전 퀘스트 미 클리어 상태일 경우
-            Unlocked_Objects.SetActive(false);
-            Locked_Objects.SetActive(true);
-            Wait_Objects.SetActive(false);
-            AllClear_Objects.SetActive(false);
+            Unlocked_Object.SetActive(false);
+            Locked_Object.SetActive(true);
+            Wait_Object.SetActive(false);
+            AllClear_Object.SetActive(false);
+            NotRewarded_Object.SetActive(false);
         }
         else if(Global.Get(stageName + num.ToString(), "isRewarded") == Global.FALSE)
         {
@@ -60,31 +72,38 @@ public class FlatUpdater : MonoBehaviour
             if (Global.Get(stageName + num.ToString(), "isWait") == Global.TRUE)
             {
                 // 퀘스트 받았을 경우
-                Unlocked_Objects.SetActive(false);
-                Locked_Objects.SetActive(false);
-                Wait_Objects.SetActive(true);
-                AllClear_Objects.SetActive(false);
+                Unlocked_Object.SetActive(false);
+                Locked_Object.SetActive(false);
+                Wait_Object.SetActive(true);
+                AllClear_Object.SetActive(false);
+
+                if (Global.Get(valueName) >= Global.Get(valueName, "Max"))
+                {
+                    NotRewarded_Object.SetActive(true);
+                }
             }
             else
             {
                 // 퀘스트 아직 안 받았을 경우
-                Unlocked_Objects.SetActive(true);
-                Locked_Objects.SetActive(false);
-                Wait_Objects.SetActive(false);
-                AllClear_Objects.SetActive(false);
+                Unlocked_Object.SetActive(true);
+                Locked_Object.SetActive(false);
+                Wait_Object.SetActive(false);
+                AllClear_Object.SetActive(false);
+                NotRewarded_Object.SetActive(false);
             }
         }
         else
         {
             // 완전히 끝났을 경우
-            Unlocked_Objects.SetActive(false);
-            Locked_Objects.SetActive(false);
-            Wait_Objects.SetActive(false);
-            AllClear_Objects.SetActive(true);
+            Unlocked_Object.SetActive(false);
+            Locked_Object.SetActive(false);
+            Wait_Object.SetActive(false);
+            AllClear_Object.SetActive(true);
+            NotRewarded_Object.SetActive(false);
         }
     }
 
-    public void Update()
+    public void FixedUpdate()
     {
         if (!Application.isPlaying)
         {

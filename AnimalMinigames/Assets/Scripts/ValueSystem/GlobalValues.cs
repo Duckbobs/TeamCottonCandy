@@ -10,7 +10,7 @@ public static class GlobalValues
 
 
         Global.Set("Banana_001", 0); // 바나나
-        Global.Set("Banana_001", "Max", 100);
+        Global.Set("Banana_001", "Max", 20);
 
         Global.Set("Banana_002", 0); // 무지개 바나나
         Global.Set("Banana_002", "Max", 100);

@@ -4,5 +4,6 @@ using UnityEngine;
 
 public static class GameSystem_Monkey_01
 {
+    public static int Gold = 0;
     public static int Score = 0;
 }

@@ -19,9 +19,7 @@ public class localValue : MonoBehaviour
             }
         }
     }
-    private void Update()
-    {
-    }
+
     public void Add(string key, float value)
     {
         float saved_value;

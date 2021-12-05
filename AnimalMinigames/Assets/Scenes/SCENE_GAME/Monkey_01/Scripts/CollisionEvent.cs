@@ -9,12 +9,23 @@ public class CollisionEvent : MonoBehaviour
     public AudioSource audioSource;
     public bool isPlayer = false;
     public Text textUI;
+    public Text textUI_Gold;
+    private int goldCount = 0;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (isPlayer)
         {
-            switch (collision.tag) {
-                case "Coin":
+            switch (collision.tag)
+            {
+                case "Gold":
+                    // 획득 사운드 재생
+                    Global.Add("Gold", 10);
+                    audioSource.PlayOneShot(soundPoint);
+                    goldCount += 10;
+                    textUI_Gold.text = StringUtil.NumberFormat(goldCount);
+                    collision.gameObject.SetActive(false);
+                    break;
+                case "Banana_001":
                     // 획득 사운드 재생
                     Global.Add("Banana_001", 1);
                     audioSource.PlayOneShot(soundPoint);
