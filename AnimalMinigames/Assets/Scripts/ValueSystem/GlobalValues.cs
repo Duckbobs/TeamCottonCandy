@@ -32,11 +32,18 @@ public static class GlobalValues
         Global.Set("Gold", 0);
         Global.Set("Gem", 0);
 
+        // 튜토
         Global.Set("FirstQuestTuto", 0);
         for (int i = 0; i < 5; i++)
         {
             Global.Set("1-" + i, "isRewarded", Global.FALSE);
             Global.Set("1-" + i, "isWait", Global.FALSE);
         }
+
+        // 출석체크
+        Global.Set("DailyLastDay", 0);
+        Global.Set("DailyToday", System.DateTime.Now.DayOfYear);
+        Debug.Log(System.DateTime.Now.DayOfYear);
+        Global.Set("DailyCount", 0);
     }
 }
