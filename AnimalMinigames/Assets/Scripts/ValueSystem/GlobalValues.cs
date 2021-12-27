@@ -45,5 +45,8 @@ public static class GlobalValues
         Global.Set("DailyToday", System.DateTime.Now.DayOfYear);
         Debug.Log(System.DateTime.Now.DayOfYear);
         Global.Set("DailyCount", 0);
+
+        // 미션
+        Global.Set("MISSION_USE_KEY", 1);
     }
 }
